@@ -322,9 +322,11 @@ function ProductsSection() {
               <div className="flex flex-col h-full border-r border-gray-200 last:border-r-0" style={{ background: '#FAF8F4' }}>
                 <div className="h-1 w-full" style={{ background: fam.accent }} />
                 <div className="p-8 flex flex-col flex-1">
-                  <p className="text-[9px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: fam.accent }}>{fam.eyebrow}</p>
-                  <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{fam.name}</h3>
-                  <p className="text-gray-400 text-[13px] leading-relaxed mb-8 font-light">{fam.description}</p>
+                  <div className="min-h-[200px] flex flex-col">
+                    <p className="text-[9px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: fam.accent }}>{fam.eyebrow}</p>
+                    <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{fam.name}</h3>
+                    <p className="text-gray-400 text-[13px] leading-relaxed font-light">{fam.description}</p>
+                  </div>
                   <div className="space-y-5 flex-1">
                     {fam.products.map((p, pi) => (
                       <div key={pi} className="border-t border-gray-100 pt-5">
