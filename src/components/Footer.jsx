@@ -58,7 +58,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-white/40 text-xs leading-relaxed">
-            © 2026 Fuzion Companies. All rights reserved. Fuzion Consulting Group LLC · Fuzion Chickasaw Group LLC
+            © 2019–2026 Fuzion Companies. All rights reserved. Fuzion Consulting Group LLC · Fuzion Chickasaw Group LLC
           </p>
           <p className="text-white/30 text-xs">
             Est. February 17, 2026 · SB217 · The Ranger Road Fire · Gate, Oklahoma
