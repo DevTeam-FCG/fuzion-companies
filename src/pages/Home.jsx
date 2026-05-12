@@ -255,6 +255,112 @@ function PortfolioSection() {
   );
 }
 
+// ─── PRODUCTS & PLATFORMS ───────────────────────────────────────────────────
+function ProductsSection() {
+  const families = [
+    {
+      eyebrow: "The Works Suite · theworkssuite.com",
+      name: "Enterprise Construction & Project Technology",
+      description: "A suite of purpose-built enterprise applications for construction, engineering, and utility programs — deployable in Fuzion's tenant or your own.",
+      accent: NAVY,
+      products: [
+        { name: "Fuzion365 Fieldworks", status: "Live", statusColor: '#1a8a6e', desc: "M365-integrated field management with Bluebeam connectivity. Available now in modular deployment." },
+        { name: "Construct Works", status: "1–3 Months", statusColor: GOLD, desc: "AI-powered document & construction management with custom forms, workflows, and metadata. Final development." },
+        { name: "ProjectWorks", status: "4–6 Months", statusColor: '#6366f1', desc: "Long-range forecasting and Stage Gate 1–5 project management with SAP / Oracle / Maximo / M365 connectivity. SaaS-ready." },
+      ],
+      link: "https://fcghelps.com/",
+      linkLabel: "Fuzion Consulting Group →",
+    },
+    {
+      eyebrow: "SB217 Platform · sb217platform.com",
+      name: "Disaster Relief & Logistics Technology",
+      description: "Born from the Ranger Road Fire. A full-stack disaster logistics platform connecting nonprofits, donors, haulers, and communities in crisis.",
+      accent: GOLD,
+      products: [
+        { name: "Support Beacon Relief", status: "Live", statusColor: '#1a8a6e', desc: "Nonprofit logistics platform for disaster response — donor management, volunteer coordination, and DOT-integrated dispatch." },
+        { name: "Support Beacon Logistics", status: "Live", statusColor: '#1a8a6e', desc: "Enterprise logistics management for large-scale relief and hauling operations with live tracking and mobile apps." },
+      ],
+      link: "https://sb217platform.com/",
+      linkLabel: "SB217 Platform →",
+    },
+    {
+      eyebrow: "Fuzion Storm Works · Fuzion Chickasaw Group",
+      name: "Community Safety & Storm Shelter Technology",
+      description: "Technology for community safety — connecting residents to storm shelters and empowering tribal governments and housing communities with life-saving tools.",
+      accent: '#1a8a6e',
+      products: [
+        { name: "Take Cover", status: "Live", statusColor: '#1a8a6e', desc: "Desktop and mobile application mapping every storm shelter in individual housing communities. Expanding to tribal communities and beyond." },
+        { name: "Fuzion Storm Works", status: "Roadmap", statusColor: GOLD, desc: "The platform brand for community safety and emergency preparedness technology serving tribal nations and municipalities." },
+      ],
+      link: "https://fuzionchickasawgroup.com/",
+      linkLabel: "Fuzion Chickasaw Group →",
+    },
+  ];
+
+  return (
+    <section id="products" className="py-32" style={{ background: '#FAF8F4' }}>
+      <div className="max-w-7xl mx-auto px-6">
+        <AnimatedElement>
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-20 items-end">
+            <div className="lg:w-1/2">
+              <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Products &amp; Platforms</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
+                Three product families.<br />One standard of excellence.
+              </h2>
+            </div>
+            <div className="lg:w-1/2 pb-2">
+              <p className="text-gray-500 text-[15px] leading-relaxed font-light">
+                Before the Ranger Road Fire opened a new door, Fuzion was already building enterprise-grade technology for construction, engineering, and community safety. Each family is distinct, each deployable independently, each built to the same engineering standard.
+              </p>
+            </div>
+          </div>
+        </AnimatedElement>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 border border-gray-200">
+          {families.map((fam, fi) => (
+            <AnimatedElement key={fi} delay={fi * 120}>
+              <div className="flex flex-col h-full border-r border-gray-200 last:border-r-0" style={{ background: '#FAF8F4' }}>
+                <div className="h-1 w-full" style={{ background: fam.accent }} />
+                <div className="p-8 flex flex-col flex-1">
+                  <p className="text-[9px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: fam.accent }}>{fam.eyebrow}</p>
+                  <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{fam.name}</h3>
+                  <p className="text-gray-400 text-[13px] leading-relaxed mb-8 font-light">{fam.description}</p>
+                  <div className="space-y-5 flex-1">
+                    {fam.products.map((p, pi) => (
+                      <div key={pi} className="border-t border-gray-100 pt-5">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-[11px] font-bold tracking-wide" style={{ color: NAVY }}>{p.name}</span>
+                          <span className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5" style={{ background: `${p.statusColor}18`, color: p.statusColor }}>{p.status}</span>
+                        </div>
+                        <p className="text-gray-400 text-[12px] leading-relaxed font-light">{p.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <a href={fam.link} target="_blank" rel="noopener noreferrer" className="mt-10 inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: fam.accent }}>
+                    {fam.linkLabel}
+                  </a>
+                </div>
+              </div>
+            </AnimatedElement>
+          ))}
+        </div>
+
+        <AnimatedElement delay={400}>
+          <div className="border border-gray-200 border-t-0 p-8 flex flex-col sm:flex-row items-center justify-between gap-6" style={{ background: NAVY }}>
+            <div>
+              <p className="text-[10px] tracking-[0.3em] uppercase font-semibold mb-1" style={{ color: GOLD }}>The Works Suite</p>
+              <p className="text-white text-sm font-light">Fuzion365 Fieldworks · Construct Works · ProjectWorks — deployable together or independently.</p>
+            </div>
+            <a href="https://theworkssuite.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap hover:opacity-90 transition-opacity flex-shrink-0" style={{ background: GOLD, color: 'white' }}>
+              theworkssuite.com →
+            </a>
+          </div>
+        </AnimatedElement>
+      </div>
+    </section>
+  );
+}
+
 // ─── MISSION — Dark Navy ─────────────────────────────────────────────────────
 function MissionSection() {
   const values = [
@@ -505,6 +611,7 @@ export default function Home() {
       <QuoteBanner />
       <StorySection />
       <PortfolioSection />
+      <ProductsSection />
       <MissionSection />
       <RancherNavySection />
       <LeadershipSection />
