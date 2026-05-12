@@ -8,10 +8,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0" style={{background:'#C8922A', color:'white'}}>
-                F
+              <div className="relative flex-shrink-0">
+                <div className="w-9 h-9 flex items-center justify-center" style={{background:'#C8922A'}}>
+                  <span className="text-base font-semibold" style={{color:'white', fontFamily:"'Cormorant Garamond', serif", fontSize:'1.1rem'}}>F</span>
+                </div>
+                <div className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-white/30" />
               </div>
-              <span className="text-white font-semibold tracking-wide">Fuzion Companies</span>
+              <div className="flex flex-col leading-none gap-0.5">
+                <span className="text-[15px] font-semibold tracking-[0.06em] text-white" style={{fontFamily:"'Cormorant Garamond', serif"}}>FUZION COMPANIES</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-px" style={{background:'#C8922A'}} />
+                  <span className="text-[8px] tracking-[0.3em] uppercase font-medium text-white/40">Est. 2019</span>
+                </div>
+              </div>
             </div>
             <p className="text-white/50 text-xs leading-relaxed mb-3">
               Built by Fuzion Consulting Group &amp; Fuzion Chickasaw Group

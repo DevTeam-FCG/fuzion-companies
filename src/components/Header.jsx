@@ -17,13 +17,21 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-sm border-b border-gray-200' : 'bg-white border-b border-gray-100'}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 flex-shrink-0 group">
-          <div className="w-8 h-8 flex items-center justify-center font-bold text-sm tracking-wider flex-shrink-0 transition-colors duration-200" style={{background:'#0a1628', color:'#C8922A'}}>
-            F
+        <Link to="/" className="flex items-center gap-4 flex-shrink-0 group">
+          {/* Wordmark monogram */}
+          <div className="relative flex-shrink-0">
+            <div className="w-9 h-9 flex items-center justify-center" style={{background:'#0a1628'}}>
+              <span className="text-base font-semibold tracking-widest" style={{color:'#C8922A', fontFamily:"'Cormorant Garamond', serif", fontSize:'1.1rem'}}>F</span>
+            </div>
+            <div className="absolute -bottom-0.5 -right-0.5 w-2 h-2" style={{background:'#C8922A'}} />
           </div>
-          <div className="hidden sm:flex flex-col leading-none">
-            <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase font-medium">Est. 2019</span>
-            <span className="text-sm font-semibold tracking-wide" style={{color:'#0a1628'}}>Fuzion Companies</span>
+          {/* Text lockup */}
+          <div className="hidden sm:flex flex-col leading-none gap-0.5">
+            <span className="text-[15px] font-semibold tracking-[0.08em]" style={{color:'#0a1628', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'0.06em'}}>FUZION COMPANIES</span>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-px" style={{background:'#C8922A'}} />
+              <span className="text-[8px] tracking-[0.3em] uppercase font-medium text-gray-400">Est. 2019</span>
+            </div>
           </div>
         </Link>
 
