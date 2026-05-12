@@ -289,7 +289,7 @@ function ProductsSection() {
       eyebrow: "Fuzion Storm Works · Fuzion Chickasaw Group",
       name: "Community Safety & Storm Shelter Technology",
       description: "Technology for community safety — connecting residents to storm shelters and empowering tribal governments and housing communities with life-saving tools.",
-      accent: '#1a8a6e',
+      accent: CHICKASAW_INDIGO,
       products: [
         { name: "Take Cover", status: "In Testing", statusColor: GOLD, desc: "Desktop and mobile application mapping every storm shelter in individual housing communities. Expanding to tribal communities and beyond." },
         { name: "Fuzion Storm Works", status: "Roadmap", statusColor: GOLD, desc: "The platform brand for community safety and emergency preparedness technology serving tribal nations and municipalities." },
