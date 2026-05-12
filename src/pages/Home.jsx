@@ -52,7 +52,7 @@ function HeroSection() {
           </div>
 
           <h1 className="text-5xl sm:text-7xl lg:text-[6.5rem] font-medium tracking-tight leading-[1.05] mb-8 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Technology built on <em className="italic font-semibold" style={{ color: GOLD }}>35+ years of combined</em><br />
+            Technology built on <em className="italic font-semibold" style={{ color: GOLD }}>a combined 35+ years</em><br />
             of showing up.
           </h1>
 
