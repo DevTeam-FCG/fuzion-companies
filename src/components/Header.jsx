@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
@@ -14,57 +14,51 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border/20 shadow-lg shadow-background/50 py-3" : "bg-transparent py-5"}`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-6">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-sm border-b border-gray-200' : 'bg-white border-b border-gray-100'}`}>
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 flex-shrink-0 group">
-          <div className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground font-bold text-sm tracking-wider flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+          <div className="w-8 h-8 flex items-center justify-center font-bold text-sm tracking-wider flex-shrink-0 transition-colors duration-200" style={{background:'#0a1628', color:'#C8922A'}}>
             F
           </div>
           <div className="hidden sm:flex flex-col leading-none">
-            <span className="text-muted-foreground text-[8px] tracking-[0.3em] uppercase font-semibold mb-0.5">Est. 2026</span>
-            <span className="text-foreground text-sm font-semibold tracking-widest uppercase">Fuzion Companies</span>
+            <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase font-medium">Est. 2026</span>
+            <span className="text-sm font-semibold tracking-wide" style={{color:'#0a1628'}}>Fuzion Companies</span>
           </div>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden sm:flex items-center gap-7">
-          <a href="#story" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Our Story</a>
-          <a href="#portfolio" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Portfolio</a>
-          <a href="#mission" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Mission</a>
-          <a href="#partner" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Rancher Navy</a>
-          <a href="#leadership" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Leadership</a>
-          <a href="#contact" className="text-muted-foreground text-[10px] tracking-[0.2em] uppercase hover:text-primary transition-colors duration-200 font-medium">Contact</a>
+        <nav className="hidden sm:flex items-center gap-6">
+          {[['#story','Our Story'],['#portfolio','Portfolio'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
+            <a key={href} href={href} className="text-gray-500 text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">{label}</a>
+          ))}
         </nav>
 
         {/* CTA */}
-        <a href="#contact" className="hidden sm:inline-flex items-center justify-center border border-border/40 text-foreground px-5 py-2.5 text-[10px] font-semibold tracking-[0.2em] uppercase hover:border-primary/50 hover:text-primary transition-all duration-300 flex-shrink-0 backdrop-blur-sm bg-background/10">
+        <a href="#contact" className="hidden sm:inline-flex items-center px-5 py-2.5 text-xs font-semibold tracking-widest uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300 flex-shrink-0" style={{background:'#0a1628'}}>
           Partner With Us
         </a>
 
         {/* Mobile Menu */}
         <Sheet>
           <SheetTrigger asChild className="sm:hidden">
-            <Button variant="ghost" size="icon" className="text-foreground hover:bg-muted/50">
+            <Button variant="ghost" size="icon" className="text-gray-700 hover:bg-gray-100">
               <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="bg-background border-border/30 w-72">
+          <SheetContent side="right" className="bg-white border-gray-200 w-72">
             <div className="flex items-center gap-3 mb-10 mt-2">
-              <div className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground font-bold text-sm">F</div>
+              <div className="w-8 h-8 flex items-center justify-center font-bold text-sm" style={{background:'#0a1628', color:'#C8922A'}}>F</div>
               <div className="flex flex-col leading-none">
-                <span className="text-muted-foreground text-[8px] tracking-[0.3em] uppercase font-semibold mb-0.5">Est. 2026</span>
-                <span className="text-foreground text-sm font-semibold tracking-widest uppercase">Fuzion Companies</span>
+                <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase">Est. 2026</span>
+                <span className="text-sm font-semibold tracking-wide" style={{color:'#0a1628'}}>Fuzion Companies</span>
               </div>
             </div>
             <nav className="flex flex-col gap-6">
-              <a href="#story" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Our Story</a>
-              <a href="#portfolio" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Portfolio</a>
-              <a href="#mission" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Mission</a>
-              <a href="#partner" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Rancher Navy</a>
-              <a href="#leadership" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Leadership</a>
-              <a href="#contact" className="text-muted-foreground text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">Contact</a>
-              <a href="#contact" className="mt-4 inline-flex items-center justify-center border border-primary/50 text-primary px-4 py-3 text-xs font-semibold tracking-widest uppercase hover:bg-primary/10 transition-all duration-300">
+              {[['#story','Our Story'],['#portfolio','Portfolio'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
+                <a key={href} href={href} className="text-gray-500 text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">{label}</a>
+              ))}
+              <a href="#contact" className="mt-4 inline-flex items-center justify-center px-4 py-3 text-xs font-semibold tracking-widest uppercase text-white hover:opacity-90 transition-all duration-300" style={{background:'#0a1628'}}>
                 Partner With Us
               </a>
             </nav>
