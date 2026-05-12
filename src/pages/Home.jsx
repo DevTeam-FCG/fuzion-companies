@@ -514,7 +514,7 @@ function LeadershipSection() {
         </AnimatedElement>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {LEADERSHIP_TEAM.map((member, i) => (
-            <AnimatedElement key={i} delay={i * 80}>
+            <AnimatedElement key={i} delay={i * 80} className="h-full">
               <div className="border border-gray-200 p-8 h-full hover:border-yellow-400 hover:shadow-sm transition-all duration-300" style={{ background: '#FAF8F4' }}>
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
                 <p className="text-[9px] tracking-[0.2em] uppercase mb-3 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
