@@ -6,6 +6,8 @@ import { Anchor, Globe, Building2, Zap, CheckCircle, ArrowRight } from "lucide-r
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
 const GOLD = '#C8922A';
+const CHICKASAW_INDIGO = '#3D3B8E';  // Chickasaw Nation flag indigo
+const CHICKASAW_PURPLE = '#9B8EC4'; // Chickasaw seal inner rim (honor)
 
 const PortfolioCompanyEntity = base44.entities.PortfolioCompany;
 const LeadershipMemberEntity = base44.entities.LeadershipMember;
@@ -184,7 +186,7 @@ function PortfolioSection() {
 
   const staticFallback = [
     { name: "Fuzion Consulting Group", tagline: "Technology Consulting · Primary", description: "The flagship firm. Over 35 years of combined experience supporting large-scale engineering, construction, utility, and enterprise programs. Specialists in PowerApps, AWS, AI, M365, project management, and project controls.", link_url: "https://fcghelps.com/", link_label: "fcghelps.com", status: "Live" },
-    { name: "Fuzion Chickasaw Group", tagline: "Minority Woman-Owned · Native American", description: "Founded by a proud Chickasaw Nation member to serve tribal governments, Native American enterprises, nonprofits, and public sector organizations from Calera, Oklahoma.", link_url: "https://fuzionchickasawgroup.com/", link_label: "fuzionchickasawgroup.com", status: "Launching" },
+    { name: "Fuzion Chickasaw Group", tagline: "Minority Woman-Owned · Native American · Chickasaw Nation · Calera, Oklahoma", description: "Founded by a proud Chickasaw Nation member to serve tribal governments, Native American enterprises, nonprofits, and public sector organizations from Calera, Oklahoma.", link_url: "https://fuzionchickasawgroup.com/", link_label: "fuzionchickasawgroup.com", status: "Launching" },
     { name: "SB217 — Support Beacon Platform", tagline: "Technology Platform · Born 2/17/2026", description: "The parent technology platform born from the Ranger Road Fire. Houses Support Beacon Relief for nonprofits and Support Beacon Logistics for enterprise clients.", link_url: "https://sb217platform.com/", link_label: "sb217platform.com", status: "Live" },
     { name: "Rancher Navy", tagline: "501(c)(3) · Founding Partner", description: "The Texas-based 501(c)(3) nonprofit that started everything. Founded by Morgan Broome and Amy Houston Gaddis to support agricultural communities in disaster.", link_url: "https://ranchernavy.org/", link_label: "ranchernavy.org", status: "Live" },
     { name: "Fortitude Junk Removal & Hauling, LLC", tagline: "Coming Soon · Veteran-Owned · Supported Entity", description: "A veteran-owned hauling company supported by Fuzion Companies technology and integrated with the Support Beacon Relief dispatch platform to support Rancher Navy's ground operations during natural disasters.", link_url: "#contact", link_label: "Inquire about Fortitude", status: "Coming Soon" },
@@ -219,7 +221,7 @@ function PortfolioSection() {
             <AnimatedElement key={i} delay={i * 80} className="h-full">
               <div className="p-8 h-full flex flex-col border-b border-r border-gray-200 hover:shadow-md transition-shadow duration-300 group" style={{ background: '#FAF8F4' }}>
                 {/* Color accent top bar */}
-                <div className="h-1 w-12 mb-6" style={{ background: i % 2 === 0 ? NAVY : GOLD }} />
+                <div className="h-1 w-12 mb-6" style={{ background: [NAVY, CHICKASAW_INDIGO, GOLD, GOLD][i] || NAVY }} />
                 <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{company.tagline}</p>
                 <h3 className="text-xl lg:text-2xl font-semibold mb-4 group-hover:opacity-80 transition-opacity" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   {company.name}
