@@ -216,7 +216,7 @@ function PortfolioSection() {
         {/* Main 2x2 grid */}
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 ${loading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`}>
           {mainItems.map((company, i) => (
-            <AnimatedElement key={i} delay={i * 80}>
+            <AnimatedElement key={i} delay={i * 80} className="h-full">
               <div className="p-8 h-full flex flex-col border-b border-r border-gray-200 hover:shadow-md transition-shadow duration-300 group" style={{ background: '#FAF8F4' }}>
                 {/* Color accent top bar */}
                 <div className="h-1 w-12 mb-6" style={{ background: i % 2 === 0 ? NAVY : GOLD }} />
