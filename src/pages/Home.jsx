@@ -113,7 +113,7 @@ function StorySection() {
   ];
 
   return (
-    <section id="story" className="bg-white py-32">
+    <section id="story" className="py-32" style={{ background: '#FAF8F4' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           <div className="lg:col-span-7">
@@ -148,7 +148,7 @@ function StorySection() {
 
           <div className="lg:col-span-5 lg:sticky lg:top-32 space-y-6">
             <AnimatedElement delay={300}>
-              <div className="bg-white border border-gray-200 p-8 relative overflow-hidden shadow-sm" style={{ borderLeft: `4px solid ${GOLD}` }}>
+              <div className="border border-gray-200 p-8 relative overflow-hidden shadow-sm" style={{ borderLeft: `4px solid ${GOLD}`, background: '#FAF8F4' }}>
                 <blockquote className="text-lg italic leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   "This application is better than many of the enterprise logistics tools I have ever seen."
                 </blockquote>
@@ -159,7 +159,7 @@ function StorySection() {
             <div className="grid grid-cols-2 gap-4">
               {stats.map((s, i) => (
                 <AnimatedElement key={i} delay={400 + (i * 100)}>
-                  <div className="bg-white border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300">
+                  <div className="border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300" style={{ background: '#FAF8F4' }}>
                     <div className="text-4xl font-medium mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{s.value}</div>
                     <div className="text-gray-400 text-[11px] tracking-wide uppercase leading-snug">{s.label}</div>
                   </div>
@@ -195,7 +195,7 @@ function PortfolioSection() {
   const comingSoon = items.find(c => c.status === 'Coming Soon');
 
   return (
-    <section id="portfolio" className="py-32" style={{ background: '#f0f2f5' }}>
+    <section id="portfolio" className="py-32" style={{ background: '#EEE9E2' }}>
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedElement>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-16 items-end">
@@ -217,7 +217,7 @@ function PortfolioSection() {
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 ${loading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`}>
           {mainItems.map((company, i) => (
             <AnimatedElement key={i} delay={i * 80}>
-              <div className="bg-white p-8 h-full flex flex-col border-b border-r border-gray-200 hover:shadow-md transition-shadow duration-300 group">
+              <div className="p-8 h-full flex flex-col border-b border-r border-gray-200 hover:shadow-md transition-shadow duration-300 group" style={{ background: '#FAF8F4' }}>
                 {/* Color accent top bar */}
                 <div className="h-1 w-12 mb-6" style={{ background: i % 2 === 0 ? NAVY : GOLD }} />
                 <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{company.tagline}</p>
@@ -295,7 +295,7 @@ function MissionSection() {
 // ─── RANCHER NAVY — White ─────────────────────────────────────────────────────
 function RancherNavySection() {
   return (
-    <section id="partner" className="bg-white py-32">
+    <section id="partner" className="py-32" style={{ background: '#FAF8F4' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           
@@ -316,7 +316,7 @@ function RancherNavySection() {
 
           <div className="lg:col-span-6">
             <AnimatedElement delay={200}>
-              <div className="bg-white border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: `4px solid #1a8a6e` }}>
+              <div className="border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: '4px solid #1a8a6e', background: '#FAF8F4' }}>
                 <div className="flex items-center gap-3 mb-6">
                   <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
                   <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 901(c)(3)</span>
@@ -359,7 +359,7 @@ function LeadershipSection() {
   const items = members.length > 0 ? members : staticFallback;
 
   return (
-    <section id="leadership" className="py-32" style={{ background: '#f0f2f5' }}>
+    <section id="leadership" className="py-32" style={{ background: '#EEE9E2' }}>
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedElement>
           <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Leadership</p>
@@ -371,7 +371,7 @@ function LeadershipSection() {
         <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ${loading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`}>
           {items.map((member, i) => (
             <AnimatedElement key={i} delay={i * 100}>
-              <div className="bg-white border border-gray-200 p-8 h-full hover:border-yellow-400 hover:shadow-sm transition-all duration-300">
+              <div className="border border-gray-200 p-8 h-full hover:border-yellow-400 hover:shadow-sm transition-all duration-300" style={{ background: '#FAF8F4' }}>
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
                 <p className="text-[9px] tracking-[0.2em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
                 <h3 className="text-xl font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
@@ -399,7 +399,7 @@ function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="bg-white py-32 border-t border-gray-200">
+    <section id="contact" className="py-32 border-t border-gray-200" style={{ background: '#FAF8F4' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           
@@ -438,7 +438,7 @@ function ContactSection() {
 
           <div className="lg:col-span-7">
             <AnimatedElement delay={200}>
-              <div className="bg-white border border-gray-200 p-8 sm:p-12 shadow-sm">
+              <div className="border border-gray-200 p-8 sm:p-12 shadow-sm" style={{ background: '#FAF8F4' }}>
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
                     <div className="w-16 h-16 flex items-center justify-center mb-6 border border-gray-200">
@@ -452,24 +452,24 @@ function ContactSection() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">First Name</label>
-                        <input type="text" value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY }} required />
+                        <input type="text" value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                       </div>
                       <div>
                         <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Last Name</label>
-                        <input type="text" value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY }} required />
+                        <input type="text" value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                       </div>
                     </div>
                     <div>
                       <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Organization</label>
-                      <input type="text" value={form.organization} onChange={e => setForm({...form, organization: e.target.value})} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY }} />
+                      <input type="text" value={form.organization} onChange={e => setForm({...form, organization: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} />
                     </div>
                     <div>
                       <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Email Address</label>
-                      <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY }} required />
+                      <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                     </div>
                     <div>
                       <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">I am interested in</label>
-                      <select value={form.interest} onChange={e => setForm({...form, interest: e.target.value})} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors appearance-none" style={{ color: NAVY }}>
+                      <select value={form.interest} onChange={e => setForm({...form, interest: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors appearance-none" style={{ color: NAVY, background: '#FAF8F4' }}>
                         <option value="">Select one...</option>
                         <option>Fuzion Consulting Group</option>
                         <option>Fuzion Chickasaw Group</option>
@@ -481,7 +481,7 @@ function ContactSection() {
                     </div>
                     <div>
                       <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Message</label>
-                      <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={5} className="w-full bg-white border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors resize-none" style={{ color: NAVY }} required />
+                      <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={5} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors resize-none" style={{ color: NAVY, background: '#FAF8F4' }} required />
                     </div>
                     <button type="submit" className="px-8 py-3.5 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>
                       Send Message
@@ -500,7 +500,7 @@ function ContactSection() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen" style={{ background: '#f0f2f5' }}>
+    <div className="min-h-screen" style={{ background: '#EEE9E2' }}>
       <HeroSection />
       <QuoteBanner />
       <StorySection />
