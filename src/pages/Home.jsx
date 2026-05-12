@@ -161,7 +161,7 @@ function StorySection() {
             <div className="grid grid-cols-2 gap-4">
               {stats.map((s, i) => (
                 <AnimatedElement key={i} delay={400 + (i * 100)}>
-                  <div className="border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300" style={{ background: '#FAF8F4' }}>
+                  <div className="border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300 flex flex-col justify-between h-full min-h-[120px]" style={{ background: '#FAF8F4' }}>
                     <div className="text-4xl font-medium mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{s.value}</div>
                     <div className="text-gray-400 text-[11px] tracking-wide uppercase leading-snug">{s.label}</div>
                   </div>
