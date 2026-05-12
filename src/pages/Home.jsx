@@ -265,8 +265,8 @@ function ProductsSection() {
       accent: NAVY,
       products: [
         { name: "Fuzion365 Fieldworks", status: "Live", statusColor: '#1a8a6e', desc: "M365-integrated field management with Bluebeam connectivity. Available now in modular deployment." },
-        { name: "Construct Works", status: "1–3 Months", statusColor: GOLD, desc: "AI-powered document & construction management with custom forms, workflows, and metadata. Final development." },
-        { name: "ProjectWorks", status: "4–6 Months", statusColor: '#6366f1', desc: "Long-range forecasting and Stage Gate 1–5 project management with SAP / Oracle / Maximo / M365 connectivity. SaaS-ready." },
+        { name: "Construct Works", status: "January 2027", statusColor: GOLD, desc: "AI-powered document & construction management with custom forms, workflows, and metadata. Final development." },
+        { name: "ProjectWorks", status: "January 2027", statusColor: '#6366f1', desc: "Long-range forecasting and Stage Gate 1–5 project management with SAP / Oracle / Maximo / M365 connectivity. SaaS-ready." },
       ],
       link: "https://fcghelps.com/",
       linkLabel: "Fuzion Consulting Group →",
@@ -278,7 +278,7 @@ function ProductsSection() {
       accent: GOLD,
       products: [
         { name: "Support Beacon Relief", status: "In Testing", statusColor: GOLD, desc: "Nonprofit logistics platform for disaster response — donor management, volunteer coordination, and DOT-integrated dispatch." },
-        { name: "Support Beacon Logistics", status: "Fall 2027", statusColor: '#6366f1', desc: "Enterprise logistics management for large-scale relief and hauling operations with live tracking and mobile apps." },
+        { name: "Support Beacon Logistics", status: "Spring 2027", statusColor: '#6366f1', desc: "Enterprise logistics management for large-scale relief and hauling operations with live tracking and mobile apps." },
       ],
       link: "https://sb217platform.com/",
       linkLabel: "SB217 Platform →",
@@ -289,7 +289,7 @@ function ProductsSection() {
       description: "Technology for community safety — connecting residents to storm shelters and empowering tribal governments and housing communities with life-saving tools.",
       accent: '#1a8a6e',
       products: [
-        { name: "Take Cover", status: "Live", statusColor: '#1a8a6e', desc: "Desktop and mobile application mapping every storm shelter in individual housing communities. Expanding to tribal communities and beyond." },
+        { name: "Take Cover", status: "In Testing", statusColor: GOLD, desc: "Desktop and mobile application mapping every storm shelter in individual housing communities. Expanding to tribal communities and beyond." },
         { name: "Fuzion Storm Works", status: "Roadmap", statusColor: GOLD, desc: "The platform brand for community safety and emergency preparedness technology serving tribal nations and municipalities." },
       ],
       link: "https://fuzionchickasawgroup.com/",
