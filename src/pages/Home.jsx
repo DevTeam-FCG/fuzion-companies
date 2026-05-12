@@ -52,7 +52,7 @@ function HeroSection() {
           </div>
 
           <h1 className="text-5xl sm:text-7xl lg:text-[6.5rem] font-medium tracking-tight leading-[1.05] mb-8 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Technology built on <em className="italic font-semibold" style={{ color: GOLD }}>35 years</em><br />
+            Technology built on <em className="italic font-semibold" style={{ color: GOLD }}>35+ years of combined</em><br />
             of showing up.
           </h1>
 
@@ -108,7 +108,7 @@ function StorySection() {
     { date: "Today", title: "A new door — wide open", desc: "SB217, Support Beacon Relief, Support Beacon Logistics, Fuzion Chickasaw Group, Fortitude — an entire ecosystem born from one decision to show up." },
   ];
   const stats = [
-    { value: "35+", label: "Years Combined Experience" },
+    { value: "35+", label: "Years of Combined Team Experience" },
     { value: "6", label: "Weeks to Build SBR" },
     { value: "$0", label: "Charged to Rancher Navy" },
     { value: "2/17", label: "The Date Everything Changed" },
@@ -185,7 +185,7 @@ function PortfolioSection() {
   }, []);
 
   const staticFallback = [
-    { name: "Fuzion Consulting Group", tagline: "Technology Consulting · Primary", description: "The flagship firm. Over 35 years of combined experience supporting large-scale engineering, construction, utility, and enterprise programs. Specialists in PowerApps, AWS, AI, M365, project management, and project controls.", link_url: "https://fcghelps.com/", link_label: "fcghelps.com", status: "Live" },
+    { name: "Fuzion Consulting Group", tagline: "Technology Consulting · Primary", description: "The flagship firm. With over 35+ years of combined team experience supporting large-scale engineering, construction, utility, and enterprise programs. Specialists in PowerApps, AWS, AI, M365, project management, and project controls.", link_url: "https://fcghelps.com/", link_label: "fcghelps.com", status: "Live" },
     { name: "Fuzion Chickasaw Group", tagline: "Minority Woman-Owned · Native American · Chickasaw Nation · Calera, Oklahoma", description: "Founded by a proud Chickasaw Nation member to serve tribal governments, Native American enterprises, nonprofits, and public sector organizations from Calera, Oklahoma.", link_url: "https://fuzionchickasawgroup.com/", link_label: "fuzionchickasawgroup.com", status: "Launching" },
     { name: "SB217 — Support Beacon Platform", tagline: "Technology Platform · Born 2/17/2026", description: "The parent technology platform born from the Ranger Road Fire. Houses Support Beacon Relief for nonprofits and Support Beacon Logistics for enterprise clients.", link_url: "https://sb217platform.com/", link_label: "sb217platform.com", status: "Live" },
     { name: "Rancher Navy", tagline: "501(c)(3) · Founding Partner", description: "The Texas-based 501(c)(3) nonprofit that started everything. Founded by Morgan Broome and Amy Houston Gaddis to support agricultural communities in disaster.", link_url: "https://ranchernavy.org/", link_label: "ranchernavy.org", status: "Live" },
@@ -456,7 +456,7 @@ const FOUNDERS = [
     name: "Dan Goretskie",
     title: "Founder & CEO",
     companies: "Fuzion Consulting Group  ·  Co-Founder & COO, Fuzion Chickasaw Group",
-    bio: "Over 35 years of experience supporting large-scale engineering, construction, utility, and enterprise technology programs. The leader who drove into the Ranger Road Fire with a hay trailer and came back with a platform. The vision and conviction behind SB217, Support Beacon Relief, and the entire Fuzion Companies portfolio.",
+    bio: "The founder and driving vision behind Fuzion Consulting Group, bringing together a team with 35+ years of combined experience supporting large-scale engineering, construction, utility, and enterprise technology programs. The leader who drove into the Ranger Road Fire with a hay trailer and came back with a platform. The vision and conviction behind SB217, Support Beacon Relief, and the entire Fuzion Companies portfolio.",
     accentColor: NAVY,
   },
   {
