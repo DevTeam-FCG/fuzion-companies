@@ -123,7 +123,7 @@ function StorySection() {
                 Born from boots<br />on the ground.
               </h2>
               <p className="text-gray-500 text-[15px] leading-relaxed mb-16 max-w-2xl font-light">
-                In January 2026, Fuzion lost one of its largest contracts. In February, our founder was in Olathe, Kansas — stressed, searching, and praying that a new door would open. It did. On February 17.
+                In January 2026, a major project pauses — and with it, the certainty of what comes next. Our founder found himself in Olathe, Kansas, searching and praying that a new door would open. It did. On February 17.
               </p>
             </AnimatedElement>
 
