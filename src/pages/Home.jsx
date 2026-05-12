@@ -277,8 +277,8 @@ function ProductsSection() {
       description: "Born from the Ranger Road Fire. A full-stack disaster logistics platform connecting nonprofits, donors, haulers, and communities in crisis.",
       accent: GOLD,
       products: [
-        { name: "Support Beacon Relief", status: "Live", statusColor: '#1a8a6e', desc: "Nonprofit logistics platform for disaster response — donor management, volunteer coordination, and DOT-integrated dispatch." },
-        { name: "Support Beacon Logistics", status: "Live", statusColor: '#1a8a6e', desc: "Enterprise logistics management for large-scale relief and hauling operations with live tracking and mobile apps." },
+        { name: "Support Beacon Relief", status: "In Testing", statusColor: GOLD, desc: "Nonprofit logistics platform for disaster response — donor management, volunteer coordination, and DOT-integrated dispatch." },
+        { name: "Support Beacon Logistics", status: "Fall 2027", statusColor: '#6366f1', desc: "Enterprise logistics management for large-scale relief and hauling operations with live tracking and mobile apps." },
       ],
       link: "https://sb217platform.com/",
       linkLabel: "SB217 Platform →",
