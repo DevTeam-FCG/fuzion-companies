@@ -517,8 +517,8 @@ function LeadershipSection() {
             <AnimatedElement key={i} delay={i * 80} className="h-full">
               <div className="border border-gray-200 p-8 h-full hover:border-yellow-400 hover:shadow-sm transition-all duration-300" style={{ background: '#FAF8F4' }}>
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
-                <p className="text-[9px] tracking-[0.2em] uppercase mb-3 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
-                <h3 className="text-xl font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
+                <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
+                <p className="text-[9px] tracking-[0.2em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
                 <p className="text-gray-500 text-[13px] leading-relaxed font-light">{member.bio}</p>
               </div>
             </AnimatedElement>
