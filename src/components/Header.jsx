@@ -22,7 +22,7 @@ export default function Header() {
             F
           </div>
           <div className="hidden sm:flex flex-col leading-none">
-            <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase font-medium">Est. 2026</span>
+            <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase font-medium">Est. 2019</span>
             <span className="text-sm font-semibold tracking-wide" style={{color:'#0a1628'}}>Fuzion Companies</span>
           </div>
         </Link>
@@ -50,7 +50,7 @@ export default function Header() {
             <div className="flex items-center gap-3 mb-10 mt-2">
               <div className="w-8 h-8 flex items-center justify-center font-bold text-sm" style={{background:'#0a1628', color:'#C8922A'}}>F</div>
               <div className="flex flex-col leading-none">
-                <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase">Est. 2026</span>
+                <span className="text-gray-400 text-[9px] tracking-[0.25em] uppercase">Est. 2019</span>
                 <span className="text-sm font-semibold tracking-wide" style={{color:'#0a1628'}}>Fuzion Companies</span>
               </div>
             </div>
