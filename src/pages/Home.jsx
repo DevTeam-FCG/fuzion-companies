@@ -451,39 +451,73 @@ function RancherNavySection() {
 }
 
 // ─── LEADERSHIP — Light Gray ──────────────────────────────────────────────────
+const FOUNDERS = [
+  {
+    name: "Dan Goretskie",
+    title: "Founder & CEO",
+    companies: "Fuzion Consulting Group  ·  Co-Founder & COO, Fuzion Chickasaw Group",
+    bio: "Over 35 years of experience supporting large-scale engineering, construction, utility, and enterprise technology programs. The leader who drove into the Ranger Road Fire with a hay trailer and came back with a platform. The vision and conviction behind SB217, Support Beacon Relief, and the entire Fuzion Companies portfolio.",
+    accentColor: NAVY,
+  },
+  {
+    name: "Donna Webb",
+    title: "Founder & CEO",
+    companies: "Fuzion Chickasaw Group  ·  Co-Founder & COO, Fuzion Consulting Group",
+    bio: "A proud member of the Chickasaw Nation and the founder of Fuzion Chickasaw Group — bringing decades of consulting and program management expertise to tribal governments, Native American enterprises, nonprofits, and public sector organizations. Co-architect of the operational foundation that powers the entire Fuzion Companies team.",
+    accentColor: CHICKASAW_INDIGO,
+  },
+];
+
+const LEADERSHIP_TEAM = [
+  { name: "Andy Much", role_badge: "Principal Solutions Leader · SB217 Platform", bio: "Conceived the SB217 architecture and built the secure registration portal anchoring Support Beacon Relief. Built for reliability, built for mission." },
+  { name: "Prag Padilla", role_badge: "Principal Solutions Leader · Logistics & Mobile", bio: "The logistics and mobile development lead behind Support Beacon Relief — DOT-integrated dispatch, live hauler tracking, and iOS & Android applications." },
+  { name: "Pat Sagaser", role_badge: "Principal Solutions Engineer · Fuzion Consulting Group", bio: "Engineering solutions leader with deep expertise in regulated industry systems, field technology, and enterprise integration across construction and utility programs." },
+  { name: "Dennis DelGrosso", role_badge: "Principal Engineering Leader · Fuzion Consulting Group", bio: "Experienced engineering leader supporting delivery, controls, and execution across large-scale construction, utility, and enterprise programs." },
+  { name: "Charles Eder", role_badge: "Principal Technology Program Manager · Fuzion Consulting Group", bio: "Program management leader specializing in technology initiative delivery, M365 implementations, and enterprise workflow transformation." },
+  { name: "Shirley Patterson", role_badge: "Sr. Director, Accounting & HR · Fuzion Consulting Group", bio: "Senior director overseeing accounting, human resources, and administrative operations — the operational backbone supporting every company in the Fuzion portfolio." },
+];
+
 function LeadershipSection() {
-  const [members, setMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  
-  useEffect(() => {
-    LeadershipMemberEntity.list('sort_order', 10).then(setMembers).catch(() => {}).finally(() => setLoading(false));
-  }, []);
-
-  const staticFallback = [
-    { name: "Founder & Principal", role_badge: "Founder · Fuzion Consulting Group", bio: "Over 35 years of experience supporting large-scale engineering, construction, and enterprise technology programs. The leader who drove into the Ranger Road Fire with a hay trailer — and came back with a platform." },
-    { name: "Donna", role_badge: "Co-Founder · Fuzion Chickasaw Group", bio: "A proud member of the Chickasaw Nation and co-founder of Fuzion Chickasaw Group. Decades of consulting and program management expertise serving tribal governments and public sector organizations." },
-    { name: "Andy", role_badge: "Lead Developer · SB217 Platform", bio: "The developer who conceived the SB217 architecture and built the secure registration portal anchoring Support Beacon Relief. Built for reliability, built for mission." },
-    { name: "Prag", role_badge: "Senior Developer · Logistics & Mobile", bio: "The logistics and mobile development lead behind Support Beacon Relief — DOT-integrated dispatch, live hauler tracking, and iOS & Android applications." },
-  ];
-  
-  const items = members.length > 0 ? members : staticFallback;
-
   return (
     <section id="leadership" className="py-32" style={{ background: '#EEE9E2' }}>
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedElement>
           <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Leadership</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-16 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
+          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-4 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
             The people<br />behind the mission.
           </h2>
+          <p className="text-gray-500 text-[15px] leading-relaxed mb-16 max-w-2xl font-light">
+            One leadership team. Two companies. The same conviction in every engagement.
+          </p>
         </AnimatedElement>
 
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ${loading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`}>
-          {items.map((member, i) => (
+        {/* Founders */}
+        <AnimatedElement>
+          <p className="text-[10px] tracking-[0.25em] uppercase font-bold mb-6" style={{ color: NAVY }}>Founders</p>
+        </AnimatedElement>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+          {FOUNDERS.map((f, i) => (
             <AnimatedElement key={i} delay={i * 100}>
+              <div className="border border-gray-200 p-10 h-full hover:shadow-sm transition-shadow duration-300" style={{ background: '#FAF8F4', borderTop: `3px solid ${f.accentColor}` }}>
+                <h3 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{f.name}</h3>
+                <p className="text-sm font-semibold mb-1" style={{ color: f.accentColor }}>{f.title}</p>
+                <p className="text-[10px] tracking-[0.12em] uppercase font-medium mb-6 text-gray-400">{f.companies}</p>
+                <p className="text-gray-500 text-[14px] leading-relaxed font-light">{f.bio}</p>
+              </div>
+            </AnimatedElement>
+          ))}
+        </div>
+
+        {/* Leadership Team */}
+        <AnimatedElement delay={100}>
+          <p className="text-[10px] tracking-[0.25em] uppercase font-bold mb-6" style={{ color: NAVY }}>Leadership Team</p>
+        </AnimatedElement>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {LEADERSHIP_TEAM.map((member, i) => (
+            <AnimatedElement key={i} delay={i * 80}>
               <div className="border border-gray-200 p-8 h-full hover:border-yellow-400 hover:shadow-sm transition-all duration-300" style={{ background: '#FAF8F4' }}>
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
-                <p className="text-[9px] tracking-[0.2em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
+                <p className="text-[9px] tracking-[0.2em] uppercase mb-3 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
                 <h3 className="text-xl font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
                 <p className="text-gray-500 text-[13px] leading-relaxed font-light">{member.bio}</p>
               </div>
