@@ -29,7 +29,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden sm:flex items-center gap-6">
-          {[['#story','Our Story'],['#portfolio','Portfolio'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
+          {[['#story','Our Story'],['#portfolio','Portfolio'],['#products','Products'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
             <a key={href} href={href} className="text-gray-500 text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">{label}</a>
           ))}
         </nav>
@@ -55,7 +55,7 @@ export default function Header() {
               </div>
             </div>
             <nav className="flex flex-col gap-6">
-              {[['#story','Our Story'],['#portfolio','Portfolio'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
+              {[['#story','Our Story'],['#portfolio','Portfolio'],['#products','Products'],['#mission','Mission'],['#partner','Rancher Navy'],['#contact','Contact']].map(([href, label]) => (
                 <a key={href} href={href} className="text-gray-500 text-xs tracking-widest uppercase hover:text-primary transition-colors duration-200 font-medium">{label}</a>
               ))}
               <a href="#contact" className="mt-4 inline-flex items-center justify-center px-4 py-3 text-xs font-semibold tracking-widest uppercase text-white hover:opacity-90 transition-all duration-300" style={{background:'#0a1628'}}>
