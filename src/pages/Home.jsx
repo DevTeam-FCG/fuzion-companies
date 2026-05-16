@@ -536,7 +536,7 @@ function ContactSection() {
   const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); };
   
   const contacts = [
-    { icon: Globe, label: "Fuzion Consulting Group", link: "https://fcghelps.com/", linkLabel: "FuzionConsultingGroup.com" },
+    { icon: Globe, label: "Fuzion Consulting Group", link: "https://fuzionconsultinggroup.com/", linkLabel: "FuzionConsultingGroup.com" },
     { icon: Building2, label: "Fuzion Chickasaw Group", link: "https://fuzionchickasawgroup.com/", linkLabel: "fuzionchickasawgroup.com" },
     { icon: Zap, label: "SB217 Platform", links: [{ href: "https://sb217platform.com/", label: "sb217platform.com" }, { href: "https://www.supportbeaconrelief.com/", label: "supportbeaconrelief.com" }] },
     { icon: Anchor, label: "Rancher Navy", links: [{ href: "https://ranchernavy.org/", label: "ranchernavy.org" }, { href: "tel:+18172646444", label: "(817) 264-6444" }] },
