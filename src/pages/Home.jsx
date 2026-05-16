@@ -189,7 +189,7 @@ function PortfolioSection() {
     { name: "Fuzion Chickasaw Group", tagline: "Minority Woman-Owned · Native American · Chickasaw Nation · Calera, Oklahoma", description: "Founded by a proud Chickasaw Nation member to serve tribal governments, Native American enterprises, nonprofits, and public sector organizations from Calera, Oklahoma.", link_url: "https://fuzionchickasawgroup.com/", link_label: "fuzionchickasawgroup.com", status: "Launching" },
     { name: "SB217 — Support Beacon Platform", tagline: "Technology Platform · Born 2/17/2026", description: "The parent technology platform born from the Ranger Road Fire. Houses Support Beacon Relief for nonprofits and Support Beacon Logistics for enterprise clients.", link_url: "https://sb217platform.com/", link_label: "sb217platform.com", status: "Live" },
     { name: "Rancher Navy", tagline: "501(c)(3) · Founding Partner", description: "The Texas-based 501(c)(3) nonprofit that started everything. Founded by Morgan Broome and Amy Houston Gaddis to support agricultural communities in disaster.", link_url: "https://ranchernavy.org/", link_label: "ranchernavy.org", status: "Live" },
-    { name: "Fortitude Junk Removal & Hauling, LLC", tagline: "Coming Soon · Veteran-Owned · Supported Entity", description: "A veteran-owned hauling company supported by Fuzion Companies technology and integrated with the Support Beacon Relief dispatch platform to support Rancher Navy's ground operations during natural disasters.", link_url: "#contact", link_label: "Inquire about Fortitude", status: "Coming Soon" },
+    { name: "Fortitude Junk Removal", tagline: "Coming Soon · Veteran-Owned · Supported Entity", description: "A veteran-owned hauling company supported by Fuzion Companies technology and integrated with the Support Beacon Relief dispatch platform to support Rancher Navy's ground operations during natural disasters.", link_url: "#contact", link_label: "Inquire about Fortitude", status: "Coming Soon" },
   ];
   
   const items = companies.length > 0 ? companies : staticFallback;
@@ -619,7 +619,7 @@ function ContactSection() {
                         <option>Fuzion Chickasaw Group</option>
                         <option>Support Beacon Relief</option>
                         <option>Support Beacon Logistics</option>
-                        <option>Fortitude Junk Removal & Hauling</option>
+                        <option>Fortitude Junk Removal</option>
                         <option>Partnership / Media / Other</option>
                       </select>
                     </div>
