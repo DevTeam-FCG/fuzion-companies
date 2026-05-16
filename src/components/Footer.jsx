@@ -1,4 +1,20 @@
-import { Anchor } from "lucide-react";
+import { Anchor, BookOpen } from "lucide-react";
+import { generateBrandBookPDF } from "@/functions/generateBrandBookPDF";
+
+const handleBrandBook = async () => {
+  try {
+    const res = await generateBrandBookPDF({});
+    const blob = res.data instanceof Blob ? res.data : new Blob([res.data], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Fuzion_Editorial_System_Brand_Book.pdf';
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    console.error(e);
+  }
+};
 
 export default function Footer() {
   return (
@@ -60,6 +76,10 @@ export default function Footer() {
                 Rancher Navy
               </a>
               <a href="#contact" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Contact Us</a>
+              <button onClick={handleBrandBook} className="text-white/60 text-xs hover:text-primary transition-colors duration-200 flex items-center gap-1.5 text-left">
+                <BookOpen className="w-3 h-3 text-primary" />
+                Brand Book (PDF)
+              </button>
             </div>
           </div>
         </div>
