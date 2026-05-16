@@ -56,7 +56,7 @@ function HeroSection() {
             <em className="italic font-semibold" style={{ color: GOLD }}>the conviction of showing up.</em>
           </h1>
 
-          <p className="text-white/65 text-sm sm:text-base max-w-xl mb-12 leading-relaxed font-light">
+          <p className="text-white/75 text-base sm:text-[17px] max-w-xl mb-12 leading-relaxed font-normal">
             A portfolio of technology, consulting, and mission-driven businesses united by a single conviction — that excellence and service are not competing values. They are the same thing.
           </p>
 
@@ -124,7 +124,7 @@ function StorySection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Born from boots<br />on the ground.
               </h2>
-              <p className="text-gray-500 text-[15px] leading-relaxed mb-16 max-w-2xl font-light">
+              <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
                 In January 2026, a major project pauses — and with it, the certainty of what comes next. Our founder found himself in Olathe, Kansas, searching and praying that a new door would open. It did. On February 17.
               </p>
             </AnimatedElement>
@@ -138,9 +138,9 @@ function StorySection() {
                       {i < timeline.length - 1 && <div className="w-px flex-1 mt-2" style={{ background: '#e5e7eb' }} />}
                     </div>
                     <div className="pb-6">
-                      <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-2" style={{ color: GOLD }}>{item.date}</p>
-                      <p className="text-base font-semibold mb-2 tracking-wide" style={{ color: NAVY }}>{item.title}</p>
-                      <p className="text-gray-500 text-sm leading-relaxed font-light">{item.desc}</p>
+                      <p className="text-[11px] tracking-[0.2em] uppercase font-semibold mb-2" style={{ color: GOLD }}>{item.date}</p>
+                      <p className="text-lg font-semibold mb-2 tracking-wide" style={{ color: NAVY }}>{item.title}</p>
+                      <p className="text-gray-600 text-[15px] leading-relaxed font-normal">{item.desc}</p>
                     </div>
                   </div>
                 </AnimatedElement>
@@ -163,7 +163,7 @@ function StorySection() {
                 <AnimatedElement key={i} delay={400 + (i * 100)}>
                   <div className="border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300 flex flex-col justify-between h-full min-h-[120px]" style={{ background: '#FAF8F4' }}>
                     <div className="text-4xl font-medium mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{s.value}</div>
-                    <div className="text-gray-400 text-[11px] tracking-wide uppercase leading-snug">{s.label}</div>
+                    <div className="text-gray-500 text-[12px] tracking-wide uppercase leading-snug font-medium">{s.label}</div>
                   </div>
                 </AnimatedElement>
               ))}
@@ -208,7 +208,7 @@ function PortfolioSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-500 text-[15px] leading-relaxed font-light">
+              <p className="text-gray-600 text-base leading-relaxed font-normal">
                 Fuzion Companies is a portfolio of technology consulting firms, a proprietary logistics platform, a veteran-owned hauling company, and a founding nonprofit partnership — each distinct, all united by the same values and the same conviction that great work done with integrity changes things.
               </p>
             </div>
@@ -226,7 +226,7 @@ function PortfolioSection() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-4 group-hover:opacity-80 transition-opacity" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   {company.name}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-8 flex-1 font-light">{company.description}</p>
+                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 flex-1 font-normal">{company.description}</p>
                 <a href={company.link_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: NAVY }}>
                   {company.link_label} <ArrowRight className="w-3 h-3" />
                 </a>
@@ -243,7 +243,7 @@ function PortfolioSection() {
                 <div className="flex-1">
                   <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{comingSoon.tagline}</p>
                   <h3 className="text-xl lg:text-2xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{comingSoon.name}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed font-light max-w-2xl">{comingSoon.description}</p>
+                  <p className="text-gray-600 text-[15px] leading-relaxed font-normal max-w-2xl">{comingSoon.description}</p>
                 </div>
                 <a href={comingSoon.link_url} className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase whitespace-nowrap hover:opacity-70 transition-opacity mt-2" style={{ color: NAVY }}>
                   {comingSoon.link_label} <ArrowRight className="w-3 h-3" />
@@ -311,7 +311,7 @@ function ProductsSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-500 text-[15px] leading-relaxed font-light">
+              <p className="text-gray-600 text-base leading-relaxed font-normal">
                 Before the Ranger Road Fire opened a new door, Fuzion was already building enterprise-grade technology for construction, engineering, and community safety. Each family is distinct, each deployable independently, each built to the same engineering standard.
               </p>
             </div>
@@ -327,7 +327,7 @@ function ProductsSection() {
                   <div className="min-h-[200px] flex flex-col">
                     <p className="text-[9px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: fam.accent }}>{fam.eyebrow}</p>
                     <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{fam.name}</h3>
-                    <p className="text-gray-400 text-[13px] leading-relaxed font-light">{fam.description}</p>
+                    <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{fam.description}</p>
                   </div>
                   <div className="space-y-5 flex-1">
                     {fam.products.map((p, pi) => (
@@ -336,7 +336,7 @@ function ProductsSection() {
                           <span className="text-[11px] font-bold tracking-wide" style={{ color: NAVY }}>{p.name}</span>
                           <span className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5" style={{ background: `${p.statusColor}18`, color: p.statusColor }}>{p.status}</span>
                         </div>
-                        <p className="text-gray-400 text-[12px] leading-relaxed font-light">{p.desc}</p>
+                        <p className="text-gray-600 text-[13px] leading-relaxed font-normal">{p.desc}</p>
                       </div>
                     ))}
                   </div>
@@ -353,7 +353,7 @@ function ProductsSection() {
           <div className="border border-gray-200 border-t-0 p-8 flex flex-col sm:flex-row items-center justify-between gap-6" style={{ background: NAVY }}>
             <div>
               <p className="text-[10px] tracking-[0.3em] uppercase font-semibold mb-1" style={{ color: GOLD }}>The Works Suite</p>
-              <p className="text-white text-sm font-light">Fuzion365 Fieldworks · Construct Works · ProjectWorks — deployable together or independently.</p>
+              <p className="text-white text-[15px] font-normal">Fuzion365 Fieldworks · Construct Works · ProjectWorks — deployable together or independently.</p>
             </div>
             <a href="https://theworkssuite.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap hover:opacity-90 transition-opacity flex-shrink-0" style={{ background: GOLD, color: 'white' }}>
               theworkssuite.com →
@@ -382,7 +382,7 @@ function MissionSection() {
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium text-white mb-6 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             Excellence and service are the same thing.
           </h2>
-          <p className="text-white/65 text-[15px] leading-relaxed mb-16 max-w-2xl font-light">
+          <p className="text-white/75 text-base leading-relaxed mb-16 max-w-2xl font-normal">
             Every company in the Fuzion Companies portfolio was built on a belief that doing extraordinary work for the right reasons — not despite serving others, but because of it — is both a competitive advantage and a calling.
           </p>
         </AnimatedElement>
@@ -392,7 +392,7 @@ function MissionSection() {
             <AnimatedElement key={i} delay={i * 100}>
               <div className="p-10 hover:bg-white/5 transition-colors duration-300" style={{ background: `${NAVY}cc` }}>
                 <p className="text-base font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: GOLD }}>{v.title}</p>
-                <p className="text-white/60 text-[14px] leading-relaxed font-light">{v.desc}</p>
+                <p className="text-white/75 text-[15px] leading-relaxed font-normal">{v.desc}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -415,10 +415,10 @@ function RancherNavySection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 The organization<br />that opened the door.
               </h2>
-              <p className="text-gray-500 text-[15px] leading-relaxed mb-6 font-light">
+              <p className="text-gray-600 text-base leading-relaxed mb-6 font-normal">
                 When Fuzion's team arrived in Gate, Oklahoma on February 17, 2026, they were not looking for a business opportunity. They were looking to help. What they found were two remarkable women running a remarkable nonprofit — and a problem Fuzion was uniquely equipped to solve.
               </p>
-              <p className="text-gray-500 text-[15px] leading-relaxed font-light">
+              <p className="text-gray-600 text-base leading-relaxed font-normal">
                 Rancher Navy did not just inspire Support Beacon Relief. They trusted Fuzion with their operations, their donors, their volunteers, and their mission. That trust is the foundation of everything SB217 has become.
               </p>
             </AnimatedElement>
@@ -434,7 +434,7 @@ function RancherNavySection() {
                 <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   Mobilizing relief<br />when it matters most.
                 </h3>
-                <p className="text-gray-500 text-[14px] leading-relaxed mb-8 font-light">
+                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
                   A Texas-based 501(c)(3) nonprofit connecting donors, haulers, volunteers, and agricultural families in crisis — now powered by Support Beacon Relief.
                 </p>
                 <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#1a8a6e' }}>
@@ -486,7 +486,7 @@ function LeadershipSection() {
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-4 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
             The people<br />behind the mission.
           </h2>
-          <p className="text-gray-500 text-[15px] leading-relaxed mb-16 max-w-2xl font-light">
+          <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
             One leadership team. Two companies. The same conviction in every engagement.
           </p>
         </AnimatedElement>
@@ -502,7 +502,7 @@ function LeadershipSection() {
                 <h3 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{f.name}</h3>
                 <p className="text-sm font-semibold mb-1" style={{ color: f.accentColor }}>{f.title}</p>
                 <p className="text-[10px] tracking-[0.12em] uppercase font-medium mb-6 text-gray-400">{f.companies}</p>
-                <p className="text-gray-500 text-[14px] leading-relaxed font-light">{f.bio}</p>
+                <p className="text-gray-600 text-[15px] leading-relaxed font-normal">{f.bio}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -519,7 +519,7 @@ function LeadershipSection() {
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
                 <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
                 <p className="text-[9px] tracking-[0.2em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
-                <p className="text-gray-500 text-[13px] leading-relaxed font-light">{member.bio}</p>
+                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{member.bio}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -553,7 +553,7 @@ function ContactSection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Ready to build<br />something that matters?
               </h2>
-              <p className="text-gray-500 text-[15px] leading-relaxed mb-14 font-light">
+              <p className="text-gray-600 text-base leading-relaxed mb-14 font-normal">
                 Whether you are a nonprofit looking for disaster logistics technology, an enterprise exploring Support Beacon Logistics, a tribal organization seeking a certified technology partner, or anyone who wants to work with a team that shows up — we want to hear from you.
               </p>
               <div className="space-y-7">
@@ -563,13 +563,13 @@ function ContactSection() {
                       <c.icon className="w-4 h-4" style={{ color: GOLD }} />
                     </div>
                     <div className="pt-0.5">
-                      <p className="text-sm font-semibold mb-1.5 tracking-wide" style={{ color: NAVY }}>{c.label}</p>
+                      <p className="text-[15px] font-semibold mb-1.5 tracking-wide" style={{ color: NAVY }}>{c.label}</p>
                       {c.link ? (
-                        <a href={c.link} target="_blank" rel="noopener noreferrer" className="text-gray-400 text-[12px] hover:text-yellow-600 transition-colors">{c.linkLabel}</a>
+                        <a href={c.link} target="_blank" rel="noopener noreferrer" className="text-gray-500 text-[13px] hover:text-yellow-600 transition-colors">{c.linkLabel}</a>
                       ) : (
                         <div className="flex flex-wrap gap-x-4 gap-y-1">
                           {c.links?.map((l, li) => (
-                            <a key={li} href={l.href} target="_blank" rel="noopener noreferrer" className="text-gray-400 text-[12px] hover:text-yellow-600 transition-colors">{l.label}</a>
+                            <a key={li} href={l.href} target="_blank" rel="noopener noreferrer" className="text-gray-500 text-[13px] hover:text-yellow-600 transition-colors">{l.label}</a>
                           ))}
                         </div>
                       )}
@@ -589,7 +589,7 @@ function ContactSection() {
                       <CheckCircle className="w-8 h-8" style={{ color: GOLD }} />
                     </div>
                     <h3 className="text-3xl font-medium mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>Message Sent</h3>
-                    <p className="text-gray-500 text-[15px] font-light">Thank you for reaching out. We will be in touch soon.</p>
+                    <p className="text-gray-600 text-base font-normal">Thank you for reaching out. We will be in touch soon.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
