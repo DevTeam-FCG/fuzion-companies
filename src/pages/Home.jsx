@@ -86,11 +86,11 @@ function HeroSection() {
 // ─── QUOTE BANNER — Gold ─────────────────────────────────────────────────────
 function QuoteBanner() {
   return (
-    <div style={{ background: GOLD }} className="py-5 px-6">
+    <div style={{ background: GOLD }} className="py-8 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center md:text-left">
-        <span className="text-white/80 text-[11px] font-bold tracking-[0.25em] uppercase whitespace-nowrap">February 17, 2026</span>
-        <span className="hidden md:block w-px h-4 bg-white/30" />
-        <p className="text-white text-sm md:text-[15px] italic font-medium leading-relaxed max-w-3xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <span className="text-white/90 text-sm md:text-[15px] font-bold tracking-[0.25em] uppercase whitespace-nowrap">February 17, 2026</span>
+        <span className="hidden md:block w-px h-6 bg-white/40" />
+        <p className="text-white text-xl md:text-2xl italic font-medium leading-relaxed max-w-4xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           "SB217 is our anchor. February 17 is our founding date. The Ranger Road Fire is our origin. That is a brand that can go a long way."
         </p>
       </div>
