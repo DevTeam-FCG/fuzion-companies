@@ -82,19 +82,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Values row */}
-        <div className="text-center mb-8">
-          <p className="text-sm sm:text-base uppercase font-medium" style={{color:'#C8922A', letterSpacing:'0.8em'}}>
-            <span className="inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
-              <span>Faith</span>
-              <span className="text-white/30">·</span>
-              <span>Service</span>
-              <span className="text-white/30">·</span>
-              <span>Precision</span>
-              <span className="text-white/30">·</span>
-              <span>Community</span>
-            </span>
-          </p>
+        {/* Values row — aligned with columns above */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-8">
+          <p className="text-sm sm:text-base uppercase font-medium text-center" style={{color:'#C8922A', letterSpacing:'0.35em'}}>Faith</p>
+          <p className="text-sm sm:text-base uppercase font-medium text-center" style={{color:'#C8922A', letterSpacing:'0.35em'}}>Service</p>
+          <p className="text-sm sm:text-base uppercase font-medium text-center" style={{color:'#C8922A', letterSpacing:'0.35em'}}>Precision</p>
+          <p className="text-sm sm:text-base uppercase font-medium text-center" style={{color:'#C8922A', letterSpacing:'0.35em'}}>Community</p>
         </div>
 
         {/* Bottom bar */}
