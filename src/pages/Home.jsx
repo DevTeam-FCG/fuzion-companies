@@ -101,7 +101,8 @@ function QuoteBanner() {
   );
 }
 
-// ─── STORY — White ───────────────────────────────────────────────────────────
+// ─── STORY — White ───── (Removed from Home — Pass 1. Preserved for potential move to SB217 page.)
+// eslint-disable-next-line no-unused-vars
 function StorySection() {
   const timeline = [
     { date: "January 2026", title: "A major project pauses", desc: "Fuzion's largest engagement is placed on hold. The team stays together. The horizon opens. Faith holds." },
@@ -651,7 +652,6 @@ export default function Home() {
       <HeroSection />
       <QuoteBanner />
       <BeforeTheFire />
-      <StorySection />
       <PortfolioSection />
       <ProductsSection />
       <MissionSection />
