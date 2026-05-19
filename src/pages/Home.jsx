@@ -538,9 +538,16 @@ function LeadershipSection() {
 function ContactSection() {
   const [form, setForm] = useState({ firstName: "", lastName: "", organization: "", email: "", interest: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); };
-  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = `Fuzion Companies Inquiry — ${form.interest || "General"}`;
+    const body = `Name: ${form.firstName} ${form.lastName}%0D%0AOrganization: ${form.organization}%0D%0AEmail: ${form.email}%0D%0AInterest: ${form.interest}%0D%0A%0D%0AMessage:%0D%0A${form.message}`;
+    window.location.href = `mailto:technology@fcghelps.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    setSubmitted(true);
+  };
+
   const contacts = [
+    { icon: Globe, label: "Fuzion Companies", link: "mailto:technology@fcghelps.com", linkLabel: "technology@fcghelps.com" },
     { icon: Globe, label: "Fuzion Consulting Group", link: "https://fuzionconsultinggroup.com/", linkLabel: "FuzionConsultingGroup.com" },
     { icon: Building2, label: "Fuzion Chickasaw Group", link: "https://fuzionchickasawgroup.com/", linkLabel: "fuzionchickasawgroup.com" },
     { icon: Zap, label: "SB217 Platform", links: [{ href: "https://sb217platform.com/", label: "sb217platform.com" }, { href: "https://www.supportbeaconrelief.com/", label: "supportbeaconrelief.com" }] },
