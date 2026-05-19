@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { base44 } from "@/api/base44Client";
 import { Anchor, Globe, Building2, Zap, CheckCircle, ArrowRight } from "lucide-react";
 import BrandGuideDownload from "@/components/BrandGuideDownload";
+import BeforeTheFire from "@/components/home/BeforeTheFire";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -648,6 +649,7 @@ export default function Home() {
     <div className="min-h-screen" style={{ background: '#EEE9E2' }}>
       <HeroSection />
       <QuoteBanner />
+      <BeforeTheFire />
       <StorySection />
       <PortfolioSection />
       <ProductsSection />
