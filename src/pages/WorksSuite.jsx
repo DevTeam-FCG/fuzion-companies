@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { HardHat, FileText, GanttChart, Cloud, Cpu, ShieldCheck, ArrowRight, CheckCircle, Layers, Workflow } from "lucide-react";
+import IntegrationDepth from "@/components/worksuite/IntegrationDepth";
+import BuiltForIndustries from "@/components/worksuite/BuiltForIndustries";
+import ComparisonMatrix from "@/components/worksuite/ComparisonMatrix";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -410,8 +413,11 @@ export default function WorksSuite() {
       <HeroSection />
       <QuoteBanner />
       <PhilosophySection />
+      <IntegrationDepth />
       <ProductsSection />
+      <BuiltForIndustries />
       <CapabilitiesSection />
+      <ComparisonMatrix />
       <DeploymentSection />
       <ContactSection />
     </div>
