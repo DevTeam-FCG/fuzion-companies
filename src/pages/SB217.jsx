@@ -224,34 +224,34 @@ function CapabilitiesSection() {
 // ─── RANCHER NAVY PARTNER ───────────────────────────────────────────────────
 function PartnerSection() {
   return (
-    <section id="partner" className="py-32" style={{ background: `linear-gradient(160deg, ${NAVY} 0%, ${NAVY2} 100%)` }}>
+    <section id="partner" className="py-32" style={{ background: CREAM }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           <div className="lg:col-span-6">
             <AnimatedElement>
               <p className="text-[10px] tracking-[0.3em] uppercase mb-6 font-semibold" style={{ color: GOLD }}>Founding Partner</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1] text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 The nonprofit that<br />opened the door.
               </h2>
-              <p className="text-white/75 text-base leading-relaxed mb-6 font-normal">
+              <p className="text-gray-600 text-base leading-relaxed mb-6 font-normal">
                 Rancher Navy is a Texas-based 501(c)(3) connecting donors, haulers, volunteers, and agricultural families in crisis. Co-founded by Morgan Broome and Amy Houston Gaddis — the two women whose phone call started everything.
               </p>
-              <p className="text-white/75 text-base leading-relaxed font-normal">
+              <p className="text-gray-600 text-base leading-relaxed font-normal">
                 SB217 was built for them. Every product decision starts with: "Does this help Rancher Navy do the work?"
               </p>
             </AnimatedElement>
           </div>
           <div className="lg:col-span-6">
             <AnimatedElement delay={200}>
-              <div className="border p-10 sm:p-12" style={{ borderColor: 'rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.03)', borderLeft: `4px solid ${TEAL}` }}>
+              <div className="border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: `4px solid ${TEAL}`, background: CREAM }}>
                 <div className="flex items-center gap-3 mb-6">
                   <Anchor className="w-4 h-4" style={{ color: TEAL }} />
-                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-white/50">Rancher Navy · 501(c)(3)</span>
+                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
                 </div>
-                <h3 className="text-3xl font-medium mb-6 leading-tight text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   Mobilizing relief<br />when it matters most.
                 </h3>
-                <p className="text-white/70 text-[15px] leading-relaxed mb-8 font-normal">
+                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
                   Now powered by Support Beacon Relief — donor coordination, volunteer dispatch, and DOT-integrated hauling for agricultural communities in crisis.
                 </p>
                 <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: TEAL }}>
