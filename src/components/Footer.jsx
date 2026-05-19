@@ -57,13 +57,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Products */}
+          {/* Platforms */}
           <div>
-            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Products</p>
+            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Platforms</p>
             <div className="flex flex-col gap-3">
-              <a href="https://beacon-relief-hub.replit.app/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Support Beacon Relief</a>
-              <a href="#contact" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Support Beacon Logistics</a>
-              <a href="https://www.supportbeaconrelief.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SBR Application</a>
+              <a href="/works-suite" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">The Works Suite</a>
+              <a href="/sb217" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
+              <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Storm Works <span className="text-white/30">(Coming Soon)</span></a>
             </div>
           </div>
 
