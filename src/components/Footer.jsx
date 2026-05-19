@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex flex-col items-center text-center">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative flex-shrink-0">
                 <div className="w-9 h-9 flex items-center justify-center" style={{background:'#C8922A'}}>
@@ -45,9 +45,9 @@ export default function Footer() {
           </div>
 
           {/* Companies */}
-          <div>
+          <div className="flex flex-col items-center text-center">
             <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Companies</p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col items-center gap-3">
               <a href="https://fcghelps.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Consulting Group</a>
               <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Chickasaw Group</a>
               <a href="https://sb217platform.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
@@ -56,9 +56,9 @@ export default function Footer() {
           </div>
 
           {/* Platforms */}
-          <div>
+          <div className="flex flex-col items-center text-center">
             <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Platforms</p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col items-center gap-3">
               <a href="/works-suite" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">The Works Suite</a>
               <a href="/sb217" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
               <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Storm Works <span className="text-white/30">(Coming Soon)</span></a>
@@ -66,9 +66,9 @@ export default function Footer() {
           </div>
 
           {/* Partners */}
-          <div>
+          <div className="flex flex-col items-center text-center">
             <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Partners &amp; Links</p>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col items-center gap-3">
               <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200 flex items-center gap-1.5">
                 <Anchor className="w-3 h-3 text-primary" />
                 Rancher Navy
