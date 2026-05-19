@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col leading-none gap-0.5">
                 <span className="text-[15px] font-semibold tracking-[0.06em] text-white" style={{fontFamily:"'Cormorant Garamond', serif"}}>FUZION COMPANIES</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center justify-center gap-2">
                   <div className="w-4 h-px" style={{background:'#C8922A'}} />
                   <span className="text-[8px] tracking-[0.3em] uppercase font-medium text-white/40">Est. 2019</span>
                   <div className="w-4 h-px" style={{background:'#C8922A'}} />
