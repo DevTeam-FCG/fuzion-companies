@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { HardHat, FileText, GanttChart, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
+import { HardHat, FileText, GanttChart, ArrowRight, CheckCircle } from "lucide-react";
+import Philosophy from "@/components/worksuite/Philosophy";
+import IntegrationDepth from "@/components/worksuite/IntegrationDepth";
+import BuiltForIndustries from "@/components/worksuite/BuiltForIndustries";
+import Capabilities from "@/components/worksuite/Capabilities";
+import ComparisonMatrix from "@/components/worksuite/ComparisonMatrix";
+import Deployment from "@/components/worksuite/Deployment";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -92,28 +98,6 @@ function QuoteBanner() {
         </p>
       </div>
     </div>
-  );
-}
-
-// ─── EXTERNAL CTA ────────────────────────────────────────────────────────────
-function ExternalSiteCTA() {
-  return (
-    <section className="py-24" style={{ background: CREAM }}>
-      <div className="max-w-5xl mx-auto px-6 text-center">
-        <AnimatedElement>
-          <p className="text-[10px] tracking-[0.3em] uppercase mb-6 font-semibold" style={{ color: GOLD }}>Dedicated Product Site</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-            The Works Suite lives at<br /><em className="italic font-semibold" style={{ color: GOLD }}>theworkssuite.com</em>
-          </h2>
-          <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
-            For complete product details, capability comparisons against Procore, Aconex, Autodesk Construction Cloud, and Hexagon — plus deployment options, pricing, and enterprise resources — visit the dedicated Works Suite site.
-          </p>
-          <a href="https://theworkssuite.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-10 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>
-            Visit theworkssuite.com <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        </AnimatedElement>
-      </div>
-    </section>
   );
 }
 
@@ -309,8 +293,13 @@ export default function WorksSuite() {
     <div className="min-h-screen" style={{ background: CREAM_DEEP }}>
       <HeroSection />
       <QuoteBanner />
+      <Philosophy />
+      <IntegrationDepth />
       <ProductsSection />
-      <ExternalSiteCTA />
+      <BuiltForIndustries />
+      <Capabilities />
+      <ComparisonMatrix />
+      <Deployment />
       <ContactSection />
     </div>
   );
