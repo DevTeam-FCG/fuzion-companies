@@ -238,7 +238,13 @@ function ProductsSection() {
 function ContactSection() {
   const [form, setForm] = useState({ firstName: "", lastName: "", organization: "", email: "", interest: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const subject = `Works Suite Inquiry — ${form.interest || "General"}`;
+    const body = `Name: ${form.firstName} ${form.lastName}%0D%0AOrganization: ${form.organization}%0D%0AEmail: ${form.email}%0D%0AInterest: ${form.interest}%0D%0A%0D%0AMessage:%0D%0A${form.message}`;
+    window.location.href = `mailto:technology@fcghelps.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    setSubmitted(true);
+  };
 
   return (
     <section id="contact" className="py-32 border-t border-gray-200" style={{ background: CREAM }}>
