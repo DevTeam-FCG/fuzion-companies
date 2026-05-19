@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Flame, Anchor, Truck, Users, Heart, ArrowRight, CheckCircle, Calendar, MapPin, Database, Shield } from "lucide-react";
+import FoundingStory from "@/components/sb217/FoundingStory";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -407,7 +408,7 @@ export default function SB217() {
     <div className="min-h-screen" style={{ background: CREAM_DEEP }}>
       <HeroSection />
       <OriginBanner />
-      <OriginSection />
+      <FoundingStory />
       <ProductsSection />
       <CapabilitiesSection />
       <PartnerSection />
