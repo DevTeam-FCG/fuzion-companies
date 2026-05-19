@@ -48,10 +48,10 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center">
             <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Companies</p>
             <div className="flex flex-col items-center gap-3">
-              <a href="https://fcghelps.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Consulting Group</a>
-              <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Chickasaw Group</a>
-              <a href="https://sb217platform.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
-              <a href="#contact" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fortitude (Coming Soon)</a>
+              <a href="https://fcghelps.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fuzion Consulting Group</a>
+              <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fuzion Chickasaw Group</a>
+              <a href="https://sb217platform.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">SB217 Platform</a>
+              <a href="#contact" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fortitude (Coming Soon)</a>
             </div>
           </div>
 
@@ -59,9 +59,9 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center">
             <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Platforms</p>
             <div className="flex flex-col items-center gap-3">
-              <a href="/works-suite" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">The Works Suite</a>
-              <a href="/sb217" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
-              <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Storm Works <span className="text-white/30">(Coming Soon)</span></a>
+              <a href="/works-suite" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">The Works Suite</a>
+              <a href="/sb217" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">SB217 Platform</a>
+              <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fuzion Storm Works <span className="text-white/40">(Coming Soon)</span></a>
             </div>
           </div>
 
@@ -69,13 +69,13 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center">
             <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Partners &amp; Links</p>
             <div className="flex flex-col items-center gap-3">
-              <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200 flex items-center gap-1.5">
-                <Anchor className="w-3 h-3 text-primary" />
+              <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200 flex items-center gap-1.5">
+                <Anchor className="w-3.5 h-3.5 text-primary" />
                 Rancher Navy
               </a>
-              <a href="#contact" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Contact Us</a>
-              <button onClick={handleBrandBook} className="text-white/60 text-xs hover:text-primary transition-colors duration-200 flex items-center gap-1.5 text-left">
-                <BookOpen className="w-3 h-3 text-primary" />
+              <a href="#contact" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Contact Us</a>
+              <button onClick={handleBrandBook} className="text-white/70 text-sm hover:text-primary transition-colors duration-200 flex items-center gap-1.5 text-left">
+                <BookOpen className="w-3.5 h-3.5 text-primary" />
                 Brand Book (PDF)
               </button>
             </div>
