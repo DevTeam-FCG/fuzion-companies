@@ -56,7 +56,7 @@ export default function BeforeTheFire() {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-16 items-end">
             <div className="lg:w-1/2">
               <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Before The Fire</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
+              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-semibold leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Seven years of expertise.<br />
                 <em className="italic font-semibold" style={{ color: GOLD }}>One moment that changed everything.</em>
               </h2>
