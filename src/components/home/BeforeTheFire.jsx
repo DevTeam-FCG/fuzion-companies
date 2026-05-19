@@ -50,7 +50,7 @@ const PILLARS = [
 
 export default function BeforeTheFire() {
   return (
-    <section className="py-32 border-t border-gray-200" style={{ background: CREAM }}>
+    <section id="story" className="py-32 border-t border-gray-200" style={{ background: CREAM }}>
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedElement>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-16 items-end">
