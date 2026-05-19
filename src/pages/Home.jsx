@@ -86,16 +86,16 @@ function HeroSection() {
   );
 }
 
-// ─── QUOTE BANNER — Gold ─────────────────────────────────────────────────────
+// ─── QUOTE BANNER — Gold ─── (Third-party trust signal — parent-brand appropriate)
 function QuoteBanner() {
   return (
     <div style={{ background: GOLD }} className="py-8 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center md:text-left">
-        <span className="text-white/85 text-[13px] font-bold tracking-[0.25em] uppercase whitespace-nowrap">February 17, 2026</span>
-        <span className="hidden md:block w-px h-5 bg-white/35" />
         <p className="text-white text-lg md:text-[19px] italic font-medium leading-relaxed max-w-3xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-          "SB217 is our anchor. February 17 is our founding date. The Ranger Road Fire is our origin. That is a brand that can go a long way."
+          "This application is better than many of the enterprise logistics tools I have ever seen."
         </p>
+        <span className="hidden md:block w-px h-5 bg-white/35" />
+        <span className="text-white/85 text-[11px] font-bold tracking-[0.25em] uppercase whitespace-nowrap">— Amy Houston Gaddis, Rancher Navy</span>
       </div>
     </div>
   );
@@ -417,13 +417,10 @@ function RancherNavySection() {
             <AnimatedElement>
               <p className="text-[10px] tracking-[0.3em] uppercase mb-6 font-semibold" style={{ color: GOLD }}>Founding Nonprofit Partner</p>
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-                The organization<br />that opened the door.
+                Built alongside<br />Rancher Navy.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-6 font-normal">
-                When Fuzion's team arrived in Gate, Oklahoma on February 17, 2026, they were not looking for a business opportunity. They were looking to help. What they found were two remarkable women running a remarkable nonprofit — and a problem Fuzion was uniquely equipped to solve.
-              </p>
               <p className="text-gray-600 text-base leading-relaxed font-normal">
-                Rancher Navy did not just inspire Support Beacon Relief. They trusted Fuzion with their operations, their donors, their volunteers, and their mission. That trust is the foundation of everything SB217 has become.
+                Rancher Navy is the founding nonprofit partner of the Fuzion Companies portfolio. Their trust — with their operations, their donors, their volunteers, and their mission — is the foundation of Support Beacon Relief and a defining relationship for everything we build.
               </p>
             </AnimatedElement>
           </div>
@@ -433,7 +430,7 @@ function RancherNavySection() {
               <div className="border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: '4px solid #1a8a6e', background: '#FAF8F4' }}>
                 <div className="flex items-center gap-3 mb-6">
                   <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
-                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 901(c)(3)</span>
+                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
                 </div>
                 <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   Mobilizing relief<br />when it matters most.
