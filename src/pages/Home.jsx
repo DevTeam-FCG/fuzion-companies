@@ -104,7 +104,7 @@ function QuoteBanner() {
 function StorySection() {
   const timeline = [
     { date: "January 2026", title: "A major project pauses", desc: "Fuzion's largest engagement is placed on hold. The team stays together. The horizon opens. Faith holds." },
-    { date: "February 17, 2026 — The Ranger Road Fire", title: "Fuzion drives in", desc: "Our founder pulls a hay trailer out of storage, loads donated alfalfa, and drives from Iowa to Gate, Oklahoma — delivering hay to ranchers who lost everything." },
+    { date: "February 17, 2026 — The Ranger Road Fire", title: "Fuzion drives in", desc: "Our founder pulls a truck out of storage, picks up a loaned trailer and donated hay from CM Cattle Company in Prairie City, Iowa, and drives to Gate, Oklahoma — delivering hay to ranchers who lost everything." },
     { date: "Gate, Oklahoma", title: "Rancher Navy connection", desc: "Fuzion meets Morgan Broome and Amy Houston Gaddis — running an entire disaster response from spreadsheets. Fuzion offers to change that. For free." },
     { date: "Six Weeks Later", title: "Support Beacon Relief is born", desc: "The entire Fuzion team volunteers. What starts as a spreadsheet becomes a full logistics platform — described by nonprofit leaders as better than enterprise tools they have paid for." },
     { date: "Today", title: "A new door — wide open", desc: "SB217, Support Beacon Relief, Support Beacon Logistics, Fuzion Chickasaw Group, Fortitude — an entire ecosystem born from one decision to show up." },
