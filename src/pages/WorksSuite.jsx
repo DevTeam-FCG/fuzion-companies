@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { HardHat, FileText, GanttChart, ArrowRight, CheckCircle } from "lucide-react";
+import { HardHat, FileText, GanttChart, ArrowRight, CheckCircle, Download } from "lucide-react";
+import { generateFieldworksSlipSheet } from "@/functions/generateFieldworksSlipSheet";
 import Philosophy from "@/components/worksuite/Philosophy";
 import IntegrationDepth from "@/components/worksuite/IntegrationDepth";
 import BuiltForIndustries from "@/components/worksuite/BuiltForIndustries";
@@ -103,6 +104,26 @@ function QuoteBanner() {
 
 // ─── PRODUCTS ────────────────────────────────────────────────────────────────
 function ProductsSection() {
+  const [downloading, setDownloading] = useState(false);
+  const handleDownloadFieldworks = async () => {
+    if (downloading) return;
+    setDownloading(true);
+    try {
+      const res = await generateFieldworksSlipSheet({});
+      const blob = res.data instanceof Blob ? res.data : new Blob([res.data], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Fuzion365-Fieldworks-Brief.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   const products = [
     {
       eyebrow: "Field Productivity",
@@ -116,6 +137,7 @@ function ProductsSection() {
       features: ["Microsoft 365 native integration", "Bluebeam connectivity", "Field dashboards & site portals", "Modular module deployment", "PowerApps-extensible"],
       link: "#contact",
       linkLabel: "Talk to a consultant",
+      hasBrief: true,
     },
     {
       eyebrow: "Document & Construction Management",
@@ -187,9 +209,22 @@ function ProductsSection() {
                     </li>
                   ))}
                 </ul>
-                <a href={p.link} className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: p.accent }}>
-                  {p.linkLabel} <ArrowRight className="w-3 h-3" />
-                </a>
+                <div className="flex flex-col gap-3">
+                  <a href={p.link} className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: p.accent }}>
+                    {p.linkLabel} <ArrowRight className="w-3 h-3" />
+                  </a>
+                  {p.hasBrief && (
+                    <button
+                      onClick={handleDownloadFieldworks}
+                      disabled={downloading}
+                      className="inline-flex items-center gap-2 text-[10px] font-bold tracking-[0.15em] uppercase border px-3 py-2 hover:bg-gray-50 transition-colors disabled:opacity-50 self-start"
+                      style={{ borderColor: p.accent, color: p.accent }}
+                    >
+                      <Download className="w-3 h-3" />
+                      {downloading ? 'Generating...' : 'Download Product Brief'}
+                    </button>
+                  )}
+                </div>
               </div>
             </AnimatedElement>
           ))}
