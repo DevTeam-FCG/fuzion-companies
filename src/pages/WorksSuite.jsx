@@ -51,7 +51,7 @@ function HeroSection() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
           <div className="flex items-center gap-4 mb-8">
             <div className="w-8 h-[1px]" style={{ background: GOLD }} />
-            <span className="text-[10px] tracking-[0.3em] uppercase font-semibold" style={{ color: `${GOLD}cc` }}>The Works Suite · theworkssuite.com</span>
+            <span className="text-[10px] tracking-[0.3em] uppercase font-semibold" style={{ color: `${GOLD}cc` }}>The Works Suite · By Fuzion Consulting Group</span>
           </div>
 
           <h1 className="text-5xl sm:text-7xl lg:text-[6.5rem] font-medium tracking-tight leading-[1.05] mb-8 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
