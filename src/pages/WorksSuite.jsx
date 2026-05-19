@@ -1,9 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { HardHat, FileText, GanttChart, Cloud, Cpu, ShieldCheck, ArrowRight, CheckCircle, Layers, Workflow } from "lucide-react";
-import IntegrationDepth from "@/components/worksuite/IntegrationDepth";
-import BuiltForIndustries from "@/components/worksuite/BuiltForIndustries";
-import ComparisonMatrix from "@/components/worksuite/ComparisonMatrix";
+import { HardHat, FileText, GanttChart, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -98,44 +95,23 @@ function QuoteBanner() {
   );
 }
 
-// ─── PHILOSOPHY ──────────────────────────────────────────────────────────────
-function PhilosophySection() {
-  const pillars = [
-    { icon: HardHat, title: "Built from the field", desc: "Every workflow was specified by people who have actually run engineering and construction programs — not designed in a vacuum." },
-    { icon: Cpu, title: "AI-native, not AI-bolted", desc: "AI engineering is built into the platform — document understanding, forecasting, and automation are core, not add-ons." },
-    { icon: Cloud, title: "M365 & cloud-aligned", desc: "Deep Microsoft 365 integration with PowerApps, AWS, and modern cloud architecture from day one." },
-    { icon: ShieldCheck, title: "Regulated-industry ready", desc: "Audit-grade event logs, role-based access, and compliance patterns built for utility, EPC, and enterprise programs." },
-  ];
-
+// ─── EXTERNAL CTA ────────────────────────────────────────────────────────────
+function ExternalSiteCTA() {
   return (
-    <section id="philosophy" className="py-32" style={{ background: CREAM }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-          <div className="lg:col-span-5">
-            <AnimatedElement>
-              <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>How We Build</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-                Engineering-grade<br />software for<br />engineering work.
-              </h2>
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
-                The Works Suite was born inside Fuzion Consulting Group — a firm that has spent over 35 combined years supporting large-scale construction, utility, and enterprise programs. We built it because the tools we needed did not exist. Now they do.
-              </p>
-            </AnimatedElement>
-          </div>
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px" style={{ background: '#e5e7eb' }}>
-            {pillars.map((p, i) => (
-              <AnimatedElement key={i} delay={i * 100}>
-                <div className="p-8 h-full" style={{ background: CREAM }}>
-                  <div className="w-10 h-10 border border-gray-200 flex items-center justify-center mb-6">
-                    <p.icon className="w-4 h-4" style={{ color: GOLD }} />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.title}</h3>
-                  <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{p.desc}</p>
-                </div>
-              </AnimatedElement>
-            ))}
-          </div>
-        </div>
+    <section className="py-24" style={{ background: CREAM }}>
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <AnimatedElement>
+          <p className="text-[10px] tracking-[0.3em] uppercase mb-6 font-semibold" style={{ color: GOLD }}>Dedicated Product Site</p>
+          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
+            The Works Suite lives at<br /><em className="italic font-semibold" style={{ color: GOLD }}>theworkssuite.com</em>
+          </h2>
+          <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed mb-12 max-w-2xl mx-auto font-normal">
+            For complete product details, capability comparisons against Procore, Aconex, Autodesk Construction Cloud, and Hexagon — plus deployment options, pricing, and enterprise resources — visit the dedicated Works Suite site.
+          </p>
+          <a href="https://theworkssuite.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-10 py-4 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>
+            Visit theworkssuite.com <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </AnimatedElement>
       </div>
     </section>
   );
@@ -239,85 +215,6 @@ function ProductsSection() {
   );
 }
 
-// ─── CAPABILITIES ────────────────────────────────────────────────────────────
-function CapabilitiesSection() {
-  const capabilities = [
-    { icon: Workflow, title: "Workflow Automation", desc: "Replace manual approvals and email chains with clean, measurable, audit-ready processes." },
-    { icon: Layers, title: "Document & Construction SaaS", desc: "Modern platforms that streamline approvals, documentation, scheduling, and project delivery." },
-    { icon: Cpu, title: "AI Engineering", desc: "Practical AI that reduces overhead, automates decisions, and increases output — built in, not bolted on." },
-    { icon: Cloud, title: "M365 & Cloud", desc: "Microsoft 365 implementation, governance, security hardening, and cloud cost control." },
-    { icon: GanttChart, title: "Program Controls", desc: "Long-range forecasting, Stage Gate management, and integration with SAP, Oracle, and Maximo." },
-    { icon: ShieldCheck, title: "Integration Strategy", desc: "Connect tools, data, and workflows so your operations run as a single coherent system." },
-  ];
-
-  return (
-    <section id="capabilities" className="py-32" style={{ background: CREAM }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <AnimatedElement>
-          <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Capabilities</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-6 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-            What the suite does.
-          </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
-            The Works Suite is the productized expression of every engagement Fuzion Consulting Group has delivered. Every capability has been earned in the field.
-          </p>
-        </AnimatedElement>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border border-gray-200">
-          {capabilities.map((c, i) => (
-            <AnimatedElement key={i} delay={i * 80}>
-              <div className="p-8 border-r border-b border-gray-200 hover:shadow-sm transition-shadow duration-300 h-full" style={{ background: CREAM }}>
-                <div className="w-10 h-10 border border-gray-200 flex items-center justify-center mb-6">
-                  <c.icon className="w-4 h-4" style={{ color: GOLD }} />
-                </div>
-                <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{c.title}</h3>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{c.desc}</p>
-              </div>
-            </AnimatedElement>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ─── DEPLOYMENT ──────────────────────────────────────────────────────────────
-function DeploymentSection() {
-  const options = [
-    { name: "Fuzion-Hosted SaaS", desc: "Run on Fuzion's secure tenant. Fastest time-to-value. Managed updates, monitoring, and support included.", tag: "Fastest", color: GOLD },
-    { name: "Private Tenant", desc: "Deploy The Works Suite inside your own Microsoft 365 or AWS tenant. Your data, your governance, your security posture.", tag: "Your Tenant", color: INDIGO },
-    { name: "Hybrid Integration", desc: "Connect The Works Suite to your existing SAP, Oracle, Maximo, and M365 systems. We do the integration engineering.", tag: "Connected", color: TEAL },
-  ];
-
-  return (
-    <section className="py-32" style={{ background: `linear-gradient(160deg, ${NAVY} 0%, ${NAVY2} 100%)` }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <AnimatedElement>
-          <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Deployment</p>
-          <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-6 leading-[1.1] text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Your tenant or ours.
-          </h2>
-          <p className="text-white/70 text-base leading-relaxed mb-16 max-w-2xl font-normal">
-            Built for regulated industries that need flexibility. Three deployment paths — each with the same product, the same data model, and the same engineering team behind it.
-          </p>
-        </AnimatedElement>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-px" style={{ background: 'rgba(255,255,255,0.1)' }}>
-          {options.map((o, i) => (
-            <AnimatedElement key={i} delay={i * 100}>
-              <div className="p-10 h-full" style={{ background: NAVY }}>
-                <span className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5 inline-block mb-6" style={{ background: `${o.color}25`, color: o.color }}>{o.tag}</span>
-                <h3 className="text-2xl font-semibold mb-4 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{o.name}</h3>
-                <p className="text-white/70 text-[14px] leading-relaxed font-normal">{o.desc}</p>
-              </div>
-            </AnimatedElement>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ─── CONTACT ─────────────────────────────────────────────────────────────────
 function ContactSection() {
   const [form, setForm] = useState({ firstName: "", lastName: "", organization: "", email: "", interest: "", message: "" });
@@ -412,13 +309,8 @@ export default function WorksSuite() {
     <div className="min-h-screen" style={{ background: CREAM_DEEP }}>
       <HeroSection />
       <QuoteBanner />
-      <PhilosophySection />
-      <IntegrationDepth />
       <ProductsSection />
-      <BuiltForIndustries />
-      <CapabilitiesSection />
-      <ComparisonMatrix />
-      <DeploymentSection />
+      <ExternalSiteCTA />
       <ContactSection />
     </div>
   );
