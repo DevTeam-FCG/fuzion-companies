@@ -28,9 +28,10 @@ export default function Header() {
           {/* Text lockup */}
           <div className="hidden sm:flex flex-col leading-none gap-0.5">
             <span className="text-[15px] font-semibold tracking-[0.08em]" style={{color:'#0a1628', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'0.06em'}}>FUZION COMPANIES</span>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <div className="w-4 h-px" style={{background:'#C8922A'}} />
               <span className="text-[8px] tracking-[0.3em] uppercase font-medium text-gray-400">Est. 2019</span>
+              <div className="w-4 h-px" style={{background:'#C8922A'}} />
             </div>
           </div>
         </Link>
