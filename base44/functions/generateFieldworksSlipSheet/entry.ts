@@ -267,7 +267,7 @@ function renderPage2(doc) {
     lY = body(doc, d.desc, col1X, lY + 0.2, colW, 9, TEXT, 1.4) + 0.15;
   });
 
-  const industries = ['EPC & Heavy Construction', 'Utilities (Electric / Gas / Water)', 'Energy & Industrial', 'Infrastructure & Civil', 'Commercial Construction', 'Public Sector & Tribal'];
+  const industries = ['EPC & Heavy Construction', 'Energy, Gas & Oil', 'Transmission & Distribution', 'Water & Waste Water', 'Infrastructure & Civil', 'Commercial Construction', 'Public Sector & Tribal'];
   industries.forEach((ind) => {
     doc.setFillColor(...GOLD);
     doc.rect(col2X, rY - 0.09, 0.05, 0.05, 'F');
