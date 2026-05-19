@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Companies */}
           <div className="flex flex-col items-center text-center">
-            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Companies</p>
+            <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Companies</p>
             <div className="flex flex-col items-center gap-3">
               <a href="https://fcghelps.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Consulting Group</a>
               <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">Fuzion Chickasaw Group</a>
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Platforms */}
           <div className="flex flex-col items-center text-center">
-            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Platforms</p>
+            <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Platforms</p>
             <div className="flex flex-col items-center gap-3">
               <a href="/works-suite" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">The Works Suite</a>
               <a href="/sb217" className="text-white/60 text-xs hover:text-primary transition-colors duration-200">SB217 Platform</a>
@@ -67,7 +67,7 @@ export default function Footer() {
 
           {/* Partners */}
           <div className="flex flex-col items-center text-center">
-            <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-5">Partners &amp; Links</p>
+            <p className="text-white text-sm font-extrabold tracking-widest uppercase mb-5">Partners &amp; Links</p>
             <div className="flex flex-col items-center gap-3">
               <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="text-white/60 text-xs hover:text-primary transition-colors duration-200 flex items-center gap-1.5">
                 <Anchor className="w-3 h-3 text-primary" />
