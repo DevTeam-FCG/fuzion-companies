@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BookOpen, Download, Loader2 } from "lucide-react";
-import { generateBrandGuidePDF } from "@/functions/generateBrandGuidePDF";
+import { generateBrandBookPDF } from "@/functions/generateBrandBookPDF";
 
 const NAVY = '#0a1628';
 const GOLD = '#C8922A';
@@ -11,7 +11,7 @@ export default function BrandGuideDownload() {
   const handleDownload = async () => {
     setLoading(true);
     try {
-      const response = await generateBrandGuidePDF({}, { responseType: 'blob' });
+      const response = await generateBrandBookPDF({}, { responseType: 'blob' });
       const blob = new Blob([response.data], { type: 'application/pdf' });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
