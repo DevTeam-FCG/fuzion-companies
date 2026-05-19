@@ -58,7 +58,7 @@ function HeroSection() {
           </h1>
 
           <p className="text-white/75 text-base sm:text-[17px] max-w-xl mb-12 leading-relaxed font-normal">
-            A portfolio of technology, consulting, and mission-driven businesses united by a single conviction — that excellence and service are not competing values. They are the same thing.
+            A portfolio of technology, consulting, and mission-driven businesses — backed by 35+ years of combined experience in engineering, enterprise software, and capital programs, and united by one conviction: excellence and service are the same thing.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 mb-14">
