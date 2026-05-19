@@ -84,8 +84,16 @@ export default function Footer() {
 
         {/* Values row */}
         <div className="text-center mb-8">
-          <p className="text-xs tracking-[0.3em] uppercase font-medium" style={{color:'#C8922A'}}>
-            Faith · Service · Precision · Community
+          <p className="text-sm sm:text-base uppercase font-medium" style={{color:'#C8922A', letterSpacing:'0.8em'}}>
+            <span className="inline-flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+              <span>Faith</span>
+              <span className="text-white/30">·</span>
+              <span>Service</span>
+              <span className="text-white/30">·</span>
+              <span>Precision</span>
+              <span className="text-white/30">·</span>
+              <span>Community</span>
+            </span>
           </p>
         </div>
 
