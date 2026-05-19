@@ -51,7 +51,7 @@ export default function Footer() {
               <a href="https://fcghelps.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fuzion Consulting Group</a>
               <a href="https://fuzionchickasawgroup.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fuzion Chickasaw Group</a>
               <a href="https://sb217platform.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">SB217 Platform</a>
-              <a href="#contact" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fortitude (Coming Soon)</a>
+              <a href="https://fortitudejunk.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Fortitude Junk Removal</a>
             </div>
           </div>
 
