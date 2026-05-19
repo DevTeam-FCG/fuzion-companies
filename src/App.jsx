@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Home from './pages/Home';
 import SB217 from './pages/SB217';
+import WorksSuite from './pages/WorksSuite';
 import Layout from './components/Layout';
 // Add page imports here
 
@@ -35,6 +36,7 @@ const AuthenticatedApp = () => {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/sb217" element={<SB217 />} />
+        <Route path="/works-suite" element={<WorksSuite />} />
         {/* Add your page Route elements here */}
       </Route>
       <Route path="*" element={<PageNotFound />} />
