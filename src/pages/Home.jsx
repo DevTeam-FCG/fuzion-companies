@@ -87,13 +87,19 @@ function HeroSection() {
 // ─── QUOTE BANNER — Gold ─── (Third-party trust signal — parent-brand appropriate)
 function QuoteBanner() {
   return (
-    <div style={{ background: GOLD }} className="py-8 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center md:text-left">
-        <p className="text-white text-lg md:text-[19px] italic font-medium leading-relaxed max-w-3xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-          "This application is better than many of the enterprise logistics tools I have ever seen."
-        </p>
-        <span className="hidden md:block w-px h-5 bg-white/35" />
-        <span className="text-white/85 text-[11px] font-bold tracking-[0.25em] uppercase whitespace-nowrap">— Amy Houston Gaddis, Rancher Navy</span>
+    <div style={{ background: GOLD }} className="py-10 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+        <div className="flex-1 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
+          <p className="text-white text-xl md:text-[22px] italic font-medium leading-snug max-w-3xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            "This application is better than many of the enterprise logistics tools I have ever seen."
+          </p>
+          <span className="text-white text-[11px] font-bold tracking-[0.22em] uppercase whitespace-nowrap lg:border-l lg:border-white/40 lg:pl-8">
+            — Amy Houston Gaddis · Co-Founder, Rancher Navy
+          </span>
+        </div>
+        <a href="/sb217" className="inline-flex items-center gap-2 border border-white/60 hover:bg-white hover:text-yellow-700 px-6 py-3 text-[11px] font-bold tracking-[0.2em] uppercase text-white transition-all duration-300 whitespace-nowrap flex-shrink-0">
+          See the Platform →
+        </a>
       </div>
     </div>
   );
