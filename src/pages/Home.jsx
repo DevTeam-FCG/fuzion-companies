@@ -4,6 +4,7 @@ import { base44 } from "@/api/base44Client";
 import { Anchor, Globe, Building2, Zap, CheckCircle, ArrowRight } from "lucide-react";
 import BrandGuideDownload from "@/components/BrandGuideDownload";
 import BeforeTheFire from "@/components/home/BeforeTheFire";
+import DeveloperHandoffDownload from "@/components/home/DeveloperHandoffDownload";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -657,6 +658,7 @@ export default function Home() {
       <RancherNavySection />
       <LeadershipSection />
       <BrandGuideDownload />
+      <DeveloperHandoffDownload />
       <ContactSection />
     </div>
   );
