@@ -39,11 +39,8 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <p className="text-white/50 text-xs leading-relaxed mb-3">
+            <p className="text-white/50 text-xs leading-relaxed">
               Built by Fuzion Consulting Group &amp; Fuzion Chickasaw Group
-            </p>
-            <p className="text-xs tracking-[0.15em] uppercase font-medium" style={{color:'#C8922A'}}>
-              Faith · Service · Precision · Community
             </p>
           </div>
 
@@ -83,6 +80,13 @@ export default function Footer() {
               </button>
             </div>
           </div>
+        </div>
+
+        {/* Values row */}
+        <div className="text-center mb-8">
+          <p className="text-xs tracking-[0.3em] uppercase font-medium" style={{color:'#C8922A'}}>
+            Faith · Service · Precision · Community
+          </p>
         </div>
 
         {/* Bottom bar */}
