@@ -99,53 +99,6 @@ function OriginBanner() {
   );
 }
 
-// ─── ORIGIN STORY ───────────────────────────────────────────────────────────
-function OriginSection() {
-  const moments = [
-    { date: "February 17, 2026", title: "The Ranger Road Fire", desc: "Wildfire devastates ranching communities in the Oklahoma panhandle. Fuzion's founder pulls a hay trailer out of storage and drives from Iowa to Gate, Oklahoma." },
-    { date: "Gate, Oklahoma", title: "Meeting Rancher Navy", desc: "Morgan Broome and Amy Houston Gaddis are running an entire disaster response from spreadsheets. Fuzion offers to change that — for free." },
-    { date: "Six Weeks Later", title: "SBR is born", desc: "Support Beacon Relief launches: donor management, volunteer coordination, DOT-integrated hauler dispatch. The entire Fuzion team volunteers the work." },
-    { date: "Today", title: "A platform for the next disaster", desc: "SB217 is now the parent platform. Support Beacon Relief for nonprofits. Support Beacon Logistics for enterprise. Built for what comes next." },
-  ];
-
-  return (
-    <section id="origin" className="py-32" style={{ background: CREAM }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-          <div className="lg:col-span-5">
-            <AnimatedElement>
-              <p className="text-[10px] tracking-[0.3em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>Origin</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-                A platform that<br />drove itself<br />into existence.
-              </h2>
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
-                SB217 did not start in a conference room. It started with a phone call, a hay trailer, and a 700-mile drive. The platform is named for the date it was born — February 17 — and the fire that birthed it.
-              </p>
-            </AnimatedElement>
-          </div>
-          <div className="lg:col-span-7 space-y-10">
-            {moments.map((m, i) => (
-              <AnimatedElement key={i} delay={i * 100}>
-                <div className="flex gap-6 group">
-                  <div className="flex flex-col items-center mt-1 flex-shrink-0">
-                    <div className="w-3 h-3 rounded-full border-2 bg-white group-hover:bg-yellow-600 transition-colors duration-300 relative z-10" style={{ borderColor: GOLD }} />
-                    {i < moments.length - 1 && <div className="w-px flex-1 mt-2" style={{ background: '#e5e7eb' }} />}
-                  </div>
-                  <div className="pb-6">
-                    <p className="text-[11px] tracking-[0.2em] uppercase font-semibold mb-2" style={{ color: GOLD }}>{m.date}</p>
-                    <p className="text-lg font-semibold mb-2 tracking-wide" style={{ color: NAVY }}>{m.title}</p>
-                    <p className="text-gray-600 text-[15px] leading-relaxed font-normal">{m.desc}</p>
-                  </div>
-                </div>
-              </AnimatedElement>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ─── PRODUCTS ────────────────────────────────────────────────────────────────
 function ProductsSection() {
   const products = [
