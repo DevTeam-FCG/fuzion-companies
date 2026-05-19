@@ -356,8 +356,8 @@ function ProductsSection() {
               <p className="text-[10px] tracking-[0.3em] uppercase font-semibold mb-1" style={{ color: GOLD }}>The Works Suite</p>
               <p className="text-white text-[15px] font-normal">Fuzion365 Fieldworks · Construct Works · ProjectWorks — deployable together or independently.</p>
             </div>
-            <a href="https://theworkssuite.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap hover:opacity-90 transition-opacity flex-shrink-0" style={{ background: GOLD, color: 'white' }}>
-              theworkssuite.com →
+            <a href="/works-suite" className="inline-flex items-center gap-2 px-6 py-3 text-[11px] font-bold tracking-[0.2em] uppercase whitespace-nowrap hover:opacity-90 transition-opacity flex-shrink-0" style={{ background: GOLD, color: 'white' }}>
+              Explore the Works Suite →
             </a>
           </div>
         </AnimatedElement>
