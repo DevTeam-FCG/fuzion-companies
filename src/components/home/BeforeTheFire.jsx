@@ -62,7 +62,7 @@ export default function BeforeTheFire() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-gray-700 text-lg leading-relaxed font-normal">
                 Long before a wildfire rerouted our largest contract and led us to Rancher Navy, Fuzion Consulting Group was already in the work — quietly building Microsoft 365 integrations, modernizing field operations, and developing the enterprise suite that anchors everything we do today.
               </p>
             </div>
