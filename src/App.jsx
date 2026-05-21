@@ -8,6 +8,8 @@ import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import Home from './pages/Home';
 import SB217 from './pages/SB217';
 import WorksSuite from './pages/WorksSuite';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 import Layout from './components/Layout';
 // Add page imports here
 
@@ -37,6 +39,8 @@ const AuthenticatedApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/sb217" element={<SB217 />} />
         <Route path="/works-suite" element={<WorksSuite />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
         {/* Add your page Route elements here */}
       </Route>
       <Route path="*" element={<PageNotFound />} />

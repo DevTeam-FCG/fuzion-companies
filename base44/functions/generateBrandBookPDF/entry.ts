@@ -1,11 +1,24 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.25';
 import { jsPDF } from 'npm:jspdf@2.5.1';
 
+// Rate limit: max 5 PDF generations per user per minute
+const rateBuckets = new Map();
+function checkRate(email) {
+  const now = Date.now();
+  const b = rateBuckets.get(email) || { count: 0, resetAt: now + 60_000 };
+  if (now > b.resetAt) { b.count = 0; b.resetAt = now + 60_000; }
+  b.count += 1;
+  rateBuckets.set(email, b);
+  if (rateBuckets.size > 1000) for (const [k, v] of rateBuckets) if (now > v.resetAt) rateBuckets.delete(k);
+  return b.count <= 5;
+}
+
 Deno.serve(async (req) => {
   try {
     const base44 = createClientFromRequest(req);
     const user = await base44.auth.me();
     if (!user) return Response.json({ error: 'Unauthorized' }, { status: 401 });
+    if (!checkRate(user.email)) return Response.json({ error: 'Rate limit exceeded. Try again in a minute.' }, { status: 429 });
 
     const doc = new jsPDF({ unit: 'pt', format: 'letter' });
     const pageWidth = doc.internal.pageSize.getWidth();

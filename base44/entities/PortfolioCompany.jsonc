@@ -1,0 +1,49 @@
+{
+  "name": "PortfolioCompany",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "link_label": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "sort_order": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "rls": {
+    "read": {},
+    "write": {
+      "created_by": "{{user.email}}",
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

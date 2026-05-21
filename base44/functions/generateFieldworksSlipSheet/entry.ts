@@ -317,6 +317,18 @@ function renderPage2(doc) {
   doc.text('Page 2 of 2' + SEP + 'Copyright Fuzion Consulting Group 2026', PAGE_W - MARGIN, PAGE_H - 0.22, { align: 'right' });
 }
 
+// ─── RATE LIMIT ──────────────────────────────────────────────────────────────
+const rateBuckets = new Map();
+function checkRate(email) {
+  const now = Date.now();
+  const b = rateBuckets.get(email) || { count: 0, resetAt: now + 60_000 };
+  if (now > b.resetAt) { b.count = 0; b.resetAt = now + 60_000; }
+  b.count += 1;
+  rateBuckets.set(email, b);
+  if (rateBuckets.size > 1000) for (const [k, v] of rateBuckets) if (now > v.resetAt) rateBuckets.delete(k);
+  return b.count <= 5;
+}
+
 // ─── HANDLER ─────────────────────────────────────────────────────────────────
 Deno.serve(async (req) => {
   try {
@@ -324,6 +336,9 @@ Deno.serve(async (req) => {
     const user = await base44.auth.me();
     if (!user) {
       return Response.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    if (!checkRate(user.email)) {
+      return Response.json({ error: 'Rate limit exceeded. Try again in a minute.' }, { status: 429 });
     }
 
     const doc = new jsPDF({ unit: 'in', format: [PAGE_W, PAGE_H], orientation: 'portrait' });

@@ -78,6 +78,8 @@ export default function Footer() {
                 <BookOpen className="w-3.5 h-3.5 text-primary" />
                 Brand Book (PDF)
               </button>
+              <a href="/terms" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Terms of Use</a>
+              <a href="/privacy" className="text-white/70 text-sm hover:text-primary transition-colors duration-200">Privacy Policy</a>
             </div>
           </div>
         </div>
@@ -98,12 +100,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-white/40 text-xs leading-relaxed">
-            © 2019–2026 Fuzion Companies. All rights reserved. Fuzion Consulting Group LLC · Fuzion Chickasaw Group LLC
-          </p>
-          <p className="text-white/30 text-xs">
-            Est. February 17, 2026 · SB217 · The Ranger Road Fire · Gate, Oklahoma
+        <div className="border-t border-white/10 pt-8 flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <p className="text-white/40 text-xs leading-relaxed">
+              © 2019–2026 Fuzion Companies, LLC. All rights reserved. Fuzion Consulting Group, LLC · Fuzion Chickasaw Group, LLC
+            </p>
+            <p className="text-white/30 text-xs">
+              Est. February 17, 2026 · SB217 · The Ranger Road Fire · Gate, Oklahoma
+            </p>
+          </div>
+          <p className="text-white/30 text-[10px] leading-relaxed max-w-5xl">
+            "Fuzion Companies"™, "Fuzion Consulting Group"™, "Fuzion Chickasaw Group"™, "SB217"™, "Support Beacon Relief"™, "Support Beacon Logistics"™, "The Works Suite"™, "Fuzion365 Fieldworks"™, "Construct Works"™, "ProjectWorks"™, "Fuzion Storm Works"™, and "Take Cover"™ are trademarks of Fuzion Companies, LLC. All site content, design, source code, brand identity, and underlying systems are proprietary and protected by U.S. and international copyright and trademark law. Unauthorized reproduction, scraping, or AI-training ingestion is strictly prohibited. See <a href="/terms" className="underline hover:text-primary">Terms of Use</a>.
           </p>
         </div>
       </div>
