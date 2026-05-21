@@ -231,7 +231,7 @@ function PortfolioSection() {
             <AnimatedElement key={i} delay={i * 80} className="h-full">
               <div className="p-8 h-full flex flex-col border-b border-r border-gray-200 hover:shadow-md transition-shadow duration-300 group" style={{ background: '#FAF8F4' }}>
                 {/* Color accent top bar */}
-                <div className="h-1 w-12 mb-6" style={{ background: [NAVY, CHICKASAW_INDIGO, GOLD, GOLD][i] || NAVY }} />
+                <div className="h-1 w-12 mb-6" style={{ background: [NAVY, CHICKASAW_INDIGO, GOLD, '#F26B1F'][i] || NAVY }} />
                 <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{company.tagline}</p>
                 <h3 className="text-xl lg:text-2xl font-semibold mb-4 group-hover:opacity-80 transition-opacity" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   {company.name}
@@ -253,7 +253,7 @@ function PortfolioSection() {
                 <div className="flex-1">
                   <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{comingSoon.tagline}</p>
                   <h3 className="text-xl lg:text-2xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{comingSoon.name}</h3>
-                  <p className="text-[15px] leading-relaxed font-normal max-w-2xl" style={{ color: NAVY, opacity: 0.75 }}>{comingSoon.description}</p>
+                  <p className="text-base leading-relaxed font-normal max-w-2xl" style={{ color: NAVY, opacity: 0.75 }}>{comingSoon.description}</p>
                 </div>
                 <a href={comingSoon.link_url} className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase whitespace-nowrap hover:opacity-70 transition-opacity mt-2" style={{ color: NAVY }}>
                   {comingSoon.link_label} <ArrowRight className="w-3 h-3" />
