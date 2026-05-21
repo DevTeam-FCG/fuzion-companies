@@ -433,7 +433,7 @@ function RancherNavySection() {
 
           <div className="lg:col-span-6">
             <AnimatedElement delay={200}>
-              <div className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden" style={{ borderLeft: '4px solid #1a8a6e', background: '#FAF8F4' }}>
+              <div className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden" style={{ borderLeft: '4px solid #F26B1F', background: '#FAF8F4' }}>
                 <div
                   className="w-full h-64 bg-cover bg-center"
                   style={{ backgroundImage: `url(https://media.base44.com/images/public/6a02527a727fcfaa45765426/e656eed75_RancherNavy-MountedMuleSupport-Kerrville-3-Copy.jpg)` }}
@@ -442,7 +442,7 @@ function RancherNavySection() {
                 />
                 <div className="p-10 sm:p-12">
                   <div className="flex items-center gap-3 mb-6">
-                    <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
+                    <Anchor className="w-4 h-4" style={{ color: '#F26B1F' }} />
                     <span className="text-[11px] tracking-[0.15em] uppercase font-semibold" style={{ color: NAVY, opacity: 0.55 }}>Rancher Navy · 501(c)(3)</span>
                   </div>
                   <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
@@ -451,7 +451,7 @@ function RancherNavySection() {
                   <p className="text-[15px] leading-relaxed mb-8 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                     A Texas-based 501(c)(3) nonprofit connecting donors, haulers, volunteers, and agricultural families in crisis — now powered by Support Beacon Relief.
                   </p>
-                  <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#1a8a6e' }}>
+                  <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#F26B1F' }}>
                     Visit Rancher Navy → 
                   </a>
                 </div>
