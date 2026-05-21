@@ -65,7 +65,7 @@ export default function BeforeTheFire() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-700 text-lg leading-relaxed font-normal">
+              <p className="text-lg leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.78 }}>
                 Long before a wildfire rerouted our largest contract and led us to Rancher Navy, Fuzion Consulting Group was already in the work — quietly building Microsoft 365 integrations, modernizing field operations, and developing the enterprise suite that anchors everything we do today.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function BeforeTheFire() {
                   </div>
                   <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{p.eyebrow}</p>
                   <h3 className="text-xl font-semibold mb-4 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.title}</h3>
-                  <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{p.body}</p>
+                  <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{p.body}</p>
                 </div>
               </div>
             </AnimatedElement>
@@ -97,7 +97,7 @@ export default function BeforeTheFire() {
         </div>
 
         <AnimatedElement delay={400}>
-          <p className="text-center text-gray-500 text-[13px] mt-10 max-w-3xl mx-auto font-normal italic">
+          <p className="text-center text-[13px] mt-10 max-w-3xl mx-auto font-normal italic" style={{ color: NAVY, opacity: 0.6 }}>
             The expertise came first. The fire revealed who we are.
           </p>
         </AnimatedElement>

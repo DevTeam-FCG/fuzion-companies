@@ -52,7 +52,7 @@ export default function FoundingStory() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Born from boots<br />on the ground.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
+              <p className="text-base leading-relaxed mb-16 max-w-2xl font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 In January 2026, a major project pauses — and with it, the certainty of what comes next. Our founder found himself in Olathe, Kansas, searching and praying that a new door would open. It did. On February 17.
               </p>
             </AnimatedElement>
@@ -68,7 +68,7 @@ export default function FoundingStory() {
                     <div className="pb-6">
                       <p className="text-[11px] tracking-[0.2em] uppercase font-semibold mb-2" style={{ color: GOLD }}>{item.date}</p>
                       <p className="text-lg font-semibold mb-2 tracking-wide" style={{ color: NAVY }}>{item.title}</p>
-                      <p className="text-gray-600 text-[15px] leading-relaxed font-normal">{item.desc}</p>
+                      <p className="text-[15px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{item.desc}</p>
                     </div>
                   </div>
                 </AnimatedElement>
@@ -91,7 +91,7 @@ export default function FoundingStory() {
                 <AnimatedElement key={i} delay={400 + (i * 100)}>
                   <div className="border border-gray-200 p-6 shadow-sm hover:border-yellow-400 transition-colors duration-300 flex flex-col justify-between h-full min-h-[120px]" style={{ background: CREAM }}>
                     <div className="text-4xl font-medium mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{s.value}</div>
-                    <div className="text-gray-500 text-[12px] tracking-wide uppercase leading-snug font-medium">{s.label}</div>
+                    <div className="text-[12px] tracking-wide uppercase leading-snug font-medium" style={{ color: NAVY, opacity: 0.6 }}>{s.label}</div>
                   </div>
                 </AnimatedElement>
               ))}

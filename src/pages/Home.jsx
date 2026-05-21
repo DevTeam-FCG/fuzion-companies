@@ -218,7 +218,7 @@ function PortfolioSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Fuzion Companies is a portfolio of technology consulting firms, a proprietary logistics platform, a veteran-owned hauling company, and a founding nonprofit partnership — each distinct, all united by the same values and the same conviction that great work done with integrity changes things.
               </p>
             </div>
@@ -236,7 +236,7 @@ function PortfolioSection() {
                 <h3 className="text-xl lg:text-2xl font-semibold mb-4 group-hover:opacity-80 transition-opacity" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   {company.name}
                 </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 flex-1 font-normal">{company.description}</p>
+                <p className="text-[15px] leading-relaxed mb-8 flex-1 font-normal" style={{ color: NAVY, opacity: 0.75 }}>{company.description}</p>
                 <a href={company.link_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: NAVY }}>
                   {company.link_label} <ArrowRight className="w-3 h-3" />
                 </a>
@@ -253,7 +253,7 @@ function PortfolioSection() {
                 <div className="flex-1">
                   <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{comingSoon.tagline}</p>
                   <h3 className="text-xl lg:text-2xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{comingSoon.name}</h3>
-                  <p className="text-gray-600 text-[15px] leading-relaxed font-normal max-w-2xl">{comingSoon.description}</p>
+                  <p className="text-[15px] leading-relaxed font-normal max-w-2xl" style={{ color: NAVY, opacity: 0.75 }}>{comingSoon.description}</p>
                 </div>
                 <a href={comingSoon.link_url} className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.15em] uppercase whitespace-nowrap hover:opacity-70 transition-opacity mt-2" style={{ color: NAVY }}>
                   {comingSoon.link_label} <ArrowRight className="w-3 h-3" />
@@ -321,7 +321,7 @@ function ProductsSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Before the Ranger Road Fire opened a new door, Fuzion was already building enterprise-grade technology for construction, engineering, and community safety. Each family is distinct, each deployable independently, each built to the same engineering standard.
               </p>
             </div>
@@ -337,7 +337,7 @@ function ProductsSection() {
                   <div className="min-h-[200px] flex flex-col">
                     <p className="text-[9px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: fam.accent }}>{fam.eyebrow}</p>
                     <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{fam.name}</h3>
-                    <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{fam.description}</p>
+                    <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{fam.description}</p>
                   </div>
                   <div className="space-y-5 flex-1">
                     {fam.products.map((p, pi) => (
@@ -346,7 +346,7 @@ function ProductsSection() {
                           <span className="text-[11px] font-bold tracking-wide" style={{ color: NAVY }}>{p.name}</span>
                           <span className="text-[9px] font-bold tracking-[0.15em] uppercase px-2 py-0.5" style={{ background: `${p.statusColor}18`, color: p.statusColor }}>{p.status}</span>
                         </div>
-                        <p className="text-gray-600 text-[13px] leading-relaxed font-normal">{p.desc}</p>
+                        <p className="text-[13px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{p.desc}</p>
                       </div>
                     ))}
                   </div>
@@ -425,7 +425,7 @@ function RancherNavySection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Built alongside<br />Rancher Navy.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Rancher Navy is the founding nonprofit partner of the Fuzion Companies portfolio. Their trust — with their operations, their donors, their volunteers, and their mission — is the foundation of Support Beacon Relief and a defining relationship for everything we build.
               </p>
             </AnimatedElement>
@@ -443,12 +443,12 @@ function RancherNavySection() {
                 <div className="p-10 sm:p-12">
                   <div className="flex items-center gap-3 mb-6">
                     <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
-                    <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
+                    <span className="text-[11px] tracking-[0.15em] uppercase font-semibold" style={{ color: NAVY, opacity: 0.55 }}>Rancher Navy · 501(c)(3)</span>
                   </div>
                   <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                     Mobilizing relief<br />when it matters most.
                   </h3>
-                  <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
+                  <p className="text-[15px] leading-relaxed mb-8 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                     A Texas-based 501(c)(3) nonprofit connecting donors, haulers, volunteers, and agricultural families in crisis — now powered by Support Beacon Relief.
                   </p>
                   <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#1a8a6e' }}>
@@ -501,7 +501,7 @@ function LeadershipSection() {
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-4 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
             The people<br />behind the mission.
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
+          <p className="text-base leading-relaxed mb-16 max-w-2xl font-normal" style={{ color: NAVY, opacity: 0.75 }}>
             One leadership team. Two companies. The same conviction in every engagement.
           </p>
         </AnimatedElement>
@@ -516,8 +516,8 @@ function LeadershipSection() {
               <div className="border border-gray-200 p-10 h-full hover:shadow-sm transition-shadow duration-300" style={{ background: '#FAF8F4', borderTop: `3px solid ${f.accentColor}` }}>
                 <h3 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{f.name}</h3>
                 <p className="text-sm font-semibold mb-1" style={{ color: f.accentColor }}>{f.title}</p>
-                <p className="text-[10px] tracking-[0.12em] uppercase font-medium mb-6 text-gray-400">{f.companies}</p>
-                <p className="text-gray-600 text-[15px] leading-relaxed font-normal">{f.bio}</p>
+                <p className="text-[10px] tracking-[0.12em] uppercase font-medium mb-6" style={{ color: NAVY, opacity: 0.55 }}>{f.companies}</p>
+                <p className="text-[15px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{f.bio}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -534,7 +534,7 @@ function LeadershipSection() {
                 <div className="h-0.5 w-8 mb-6" style={{ background: GOLD }} />
                 <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{member.name}</h3>
                 <p className="text-[9px] tracking-[0.2em] uppercase mb-4 font-semibold" style={{ color: GOLD }}>{member.role_badge}</p>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{member.bio}</p>
+                <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{member.bio}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -574,7 +574,7 @@ function ContactSection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Ready to build<br />something that matters?
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-14 font-normal">
+              <p className="text-base leading-relaxed mb-14 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Whether you are a nonprofit looking for disaster logistics technology, an enterprise exploring Support Beacon Logistics, a tribal organization seeking a certified technology partner, or anyone who wants to work with a team that shows up — we want to hear from you.
               </p>
               <div className="space-y-7">
@@ -586,11 +586,11 @@ function ContactSection() {
                     <div className="pt-0.5">
                       <p className="text-[15px] font-semibold mb-1.5 tracking-wide" style={{ color: NAVY }}>{c.label}</p>
                       {c.link ? (
-                        <a href={c.link} target="_blank" rel="noopener noreferrer" className="text-gray-500 text-[13px] hover:text-yellow-600 transition-colors">{c.linkLabel}</a>
+                        <a href={c.link} target="_blank" rel="noopener noreferrer" className="text-[13px] hover:text-yellow-600 transition-colors" style={{ color: NAVY, opacity: 0.65 }}>{c.linkLabel}</a>
                       ) : (
                         <div className="flex flex-wrap gap-x-4 gap-y-1">
                           {c.links?.map((l, li) => (
-                            <a key={li} href={l.href} target="_blank" rel="noopener noreferrer" className="text-gray-500 text-[13px] hover:text-yellow-600 transition-colors">{l.label}</a>
+                            <a key={li} href={l.href} target="_blank" rel="noopener noreferrer" className="text-[13px] hover:text-yellow-600 transition-colors" style={{ color: NAVY, opacity: 0.65 }}>{l.label}</a>
                           ))}
                         </div>
                       )}
@@ -610,30 +610,30 @@ function ContactSection() {
                       <CheckCircle className="w-8 h-8" style={{ color: GOLD }} />
                     </div>
                     <h3 className="text-3xl font-medium mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>Message Sent</h3>
-                    <p className="text-gray-600 text-base font-normal">Thank you for reaching out. We will be in touch soon.</p>
+                    <p className="text-base font-normal" style={{ color: NAVY, opacity: 0.75 }}>Thank you for reaching out. We will be in touch soon.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">First Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>First Name</label>
                         <input type="text" value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                       </div>
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Last Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Last Name</label>
                         <input type="text" value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                       </div>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Organization</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Organization</label>
                       <input type="text" value={form.organization} onChange={e => setForm({...form, organization: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Email Address</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Email Address</label>
                       <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: '#FAF8F4' }} required />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">I am interested in</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>I am interested in</label>
                       <select value={form.interest} onChange={e => setForm({...form, interest: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors appearance-none" style={{ color: NAVY, background: '#FAF8F4' }}>
                         <option value="">Select one...</option>
                         <option>Fuzion Consulting Group</option>
@@ -645,7 +645,7 @@ function ContactSection() {
                       </select>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Message</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Message</label>
                       <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={5} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors resize-none" style={{ color: NAVY, background: '#FAF8F4' }} required />
                     </div>
                     <button type="submit" className="px-8 py-3.5 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>

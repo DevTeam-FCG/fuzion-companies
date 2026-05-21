@@ -54,7 +54,7 @@ export default function ComparisonMatrix() {
             <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.1] mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
               How the suite compares.
             </h2>
-            <p className="text-gray-600 text-base leading-relaxed font-normal">
+            <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
               Procore, Aconex, Autodesk Construction Cloud, and Hexagon are excellent at what they do — but each was built for a different era and a different problem. The Works Suite was built for what the work looks like now.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function ComparisonMatrix() {
         </AnimatedElement>
 
         <AnimatedElement delay={200}>
-          <p className="text-center text-gray-400 text-[11px] mt-6 max-w-3xl mx-auto font-normal italic leading-relaxed">
+          <p className="text-center text-[11px] mt-6 max-w-3xl mx-auto font-normal italic leading-relaxed" style={{ color: NAVY, opacity: 0.5 }}>
             Comparison reflects Fuzion's professional assessment based on publicly available product documentation and customer-reported capabilities as of 2026. Competitor product capabilities evolve continuously; buyers should validate current capability sets directly with each vendor.
           </p>
         </AnimatedElement>

@@ -66,7 +66,7 @@ export default function IntegrationDepth() {
         </AnimatedElement>
 
         <AnimatedElement delay={200}>
-          <p className="text-center text-gray-500 text-[13px] mt-8 max-w-3xl mx-auto font-normal italic">
+          <p className="text-center text-[13px] mt-8 max-w-3xl mx-auto font-normal italic" style={{ color: NAVY, opacity: 0.6 }}>
             Open architecture. Standard APIs. No proprietary lock-in. Built on Microsoft 365 and AWS so your data and workflows stay portable.
           </p>
         </AnimatedElement>

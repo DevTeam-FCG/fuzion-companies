@@ -45,7 +45,7 @@ export default function Capabilities() {
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-6 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
             What the suite does.
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
+          <p className="text-base leading-relaxed mb-16 max-w-2xl font-normal" style={{ color: NAVY, opacity: 0.75 }}>
             The Works Suite is the productized expression of every engagement Fuzion Consulting Group has delivered. Every capability has been earned in the field.
           </p>
         </AnimatedElement>
@@ -58,7 +58,7 @@ export default function Capabilities() {
                   <c.icon className="w-4 h-4" style={{ color: GOLD }} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{c.title}</h3>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{c.desc}</p>
+                <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{c.desc}</p>
               </div>
             </AnimatedElement>
           ))}

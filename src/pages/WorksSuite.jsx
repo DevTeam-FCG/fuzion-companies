@@ -179,7 +179,7 @@ function ProductsSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Each product is deployable on its own — or as a unified program platform. Same architecture, same data model, same engineering discipline. Built to scale from a single project to a regional program.
               </p>
             </div>
@@ -200,10 +200,10 @@ function ProductsSection() {
                 <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-2" style={{ color: GOLD }}>{p.eyebrow}</p>
                 <h3 className="text-2xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.name}</h3>
                 <p className="text-[15px] italic mb-5 font-medium" style={{ color: NAVY, fontFamily: "'Cormorant Garamond', serif" }}>{p.tagline}</p>
-                <p className="text-gray-600 text-[14px] leading-relaxed mb-6 font-normal">{p.desc}</p>
+                <p className="text-[14px] leading-relaxed mb-6 font-normal" style={{ color: NAVY, opacity: 0.75 }}>{p.desc}</p>
                 <ul className="space-y-2 mb-8 flex-1">
                   {p.features.map((f, fi) => (
-                    <li key={fi} className="flex items-start gap-3 text-[13px] text-gray-700 font-normal">
+                    <li key={fi} className="flex items-start gap-3 text-[13px] font-normal" style={{ color: NAVY, opacity: 0.8 }}>
                       <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: p.accent }} />
                       <span>{f}</span>
                     </li>
@@ -256,7 +256,7 @@ function ContactSection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Bring The Works<br />Suite to your<br />program.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-10 font-normal">
+              <p className="text-base leading-relaxed mb-10 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Whether you are running a Stage Gate portfolio, a regional construction program, or a utility-scale capital plan — we want to hear what you are building, and how the suite can help.
               </p>
               <div className="space-y-4">
@@ -278,30 +278,30 @@ function ContactSection() {
                       <CheckCircle className="w-8 h-8" style={{ color: GOLD }} />
                     </div>
                     <h3 className="text-3xl font-medium mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>Message Sent</h3>
-                    <p className="text-gray-600 text-base font-normal">Thank you for reaching out. We will be in touch soon.</p>
+                    <p className="text-base font-normal" style={{ color: NAVY, opacity: 0.75 }}>Thank you for reaching out. We will be in touch soon.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">First Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>First Name</label>
                         <input type="text" value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                       </div>
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Last Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Last Name</label>
                         <input type="text" value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                       </div>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Organization</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Organization</label>
                       <input type="text" value={form.organization} onChange={e => setForm({...form, organization: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Email Address</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Email Address</label>
                       <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">I am interested in</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>I am interested in</label>
                       <select value={form.interest} onChange={e => setForm({...form, interest: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors appearance-none" style={{ color: NAVY, background: CREAM }}>
                         <option value="">Select one...</option>
                         <option>Fuzion365 Fieldworks</option>
@@ -312,7 +312,7 @@ function ContactSection() {
                       </select>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Message</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Message</label>
                       <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={5} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors resize-none" style={{ color: NAVY, background: CREAM }} required />
                     </div>
                     <button type="submit" className="px-8 py-3.5 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>

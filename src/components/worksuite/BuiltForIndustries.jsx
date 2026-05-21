@@ -50,7 +50,7 @@ export default function BuiltForIndustries() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 The Works Suite was designed by people who have spent decades inside regulated capital programs — where documentation is audit evidence, schedules are commitments, and field productivity is measured in millions of dollars per day.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function BuiltForIndustries() {
                   <ind.icon className="w-4 h-4" style={{ color: GOLD }} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{ind.name}</h3>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{ind.desc}</p>
+                <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{ind.desc}</p>
               </div>
             </AnimatedElement>
           ))}

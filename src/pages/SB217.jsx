@@ -140,7 +140,7 @@ function ProductsSection() {
               </h2>
             </div>
             <div className="lg:w-1/2 pb-2">
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 SB217 is the parent. Support Beacon Relief serves nonprofits. Support Beacon Logistics serves enterprise. Both share the same engineering foundation — proven in the field, hardened in disaster response.
               </p>
             </div>
@@ -158,10 +158,10 @@ function ProductsSection() {
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.name}</h3>
                 <p className="text-base italic mb-5 font-medium" style={{ color: NAVY, fontFamily: "'Cormorant Garamond', serif" }}>{p.tagline}</p>
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-6 font-normal">{p.desc}</p>
+                <p className="text-[15px] leading-relaxed mb-6 font-normal" style={{ color: NAVY, opacity: 0.75 }}>{p.desc}</p>
                 <ul className="space-y-2 mb-8 flex-1">
                   {p.features.map((f, fi) => (
-                    <li key={fi} className="flex items-start gap-3 text-[14px] text-gray-700 font-normal">
+                    <li key={fi} className="flex items-start gap-3 text-[14px] font-normal" style={{ color: NAVY, opacity: 0.8 }}>
                       <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: p.accent }} />
                       <span>{f}</span>
                     </li>
@@ -198,7 +198,7 @@ function CapabilitiesSection() {
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-6 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
             What the platform does.
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-16 max-w-2xl font-normal">
+          <p className="text-base leading-relaxed mb-16 max-w-2xl font-normal" style={{ color: NAVY, opacity: 0.75 }}>
             Every capability was specified, designed, and shipped in response to a real problem Rancher Navy was solving by hand. There is no theoretical feature in SB217. Every line was earned.
           </p>
         </AnimatedElement>
@@ -211,7 +211,7 @@ function CapabilitiesSection() {
                   <c.icon className="w-4 h-4" style={{ color: GOLD }} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{c.title}</h3>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{c.desc}</p>
+                <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{c.desc}</p>
               </div>
             </AnimatedElement>
           ))}
@@ -233,10 +233,10 @@ function PartnerSection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 The nonprofit that<br />opened the door.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-6 font-normal">
+              <p className="text-base leading-relaxed mb-6 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Rancher Navy is a Texas-based 501(c)(3) connecting donors, haulers, volunteers, and agricultural families in crisis. Co-founded by Morgan Broome and Amy Houston Gaddis — the two women whose phone call started everything.
               </p>
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 SB217 was built for them. Every product decision starts with: "Does this help Rancher Navy do the work?"
               </p>
             </AnimatedElement>
@@ -246,12 +246,12 @@ function PartnerSection() {
               <div className="border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: `4px solid ${TEAL}`, background: CREAM }}>
                 <div className="flex items-center gap-3 mb-6">
                   <Anchor className="w-4 h-4" style={{ color: TEAL }} />
-                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
+                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold" style={{ color: NAVY, opacity: 0.55 }}>Rancher Navy · 501(c)(3)</span>
                 </div>
                 <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                   Mobilizing relief<br />when it matters most.
                 </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
+                <p className="text-[15px] leading-relaxed mb-8 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                   Now powered by Support Beacon Relief — donor coordination, volunteer dispatch, and DOT-integrated hauling for agricultural communities in crisis.
                 </p>
                 <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: TEAL }}>
@@ -282,7 +282,7 @@ function ContactSection() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Bring SB217<br />to your mission.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed mb-10 font-normal">
+              <p className="text-base leading-relaxed mb-10 font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 Whether you are a 501(c)(3) that needs Support Beacon Relief, an enterprise exploring Support Beacon Logistics, or a partner who wants to help us scale what we built — we want to hear from you.
               </p>
               <div className="space-y-5">
@@ -306,30 +306,30 @@ function ContactSection() {
                       <CheckCircle className="w-8 h-8" style={{ color: GOLD }} />
                     </div>
                     <h3 className="text-3xl font-medium mb-4" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>Message Sent</h3>
-                    <p className="text-gray-600 text-base font-normal">Thank you for reaching out. We will be in touch soon.</p>
+                    <p className="text-base font-normal" style={{ color: NAVY, opacity: 0.75 }}>Thank you for reaching out. We will be in touch soon.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">First Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>First Name</label>
                         <input type="text" value={form.firstName} onChange={e => setForm({...form, firstName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                       </div>
                       <div>
-                        <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Last Name</label>
+                        <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Last Name</label>
                         <input type="text" value={form.lastName} onChange={e => setForm({...form, lastName: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                       </div>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Organization</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Organization</label>
                       <input type="text" value={form.organization} onChange={e => setForm({...form, organization: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Email Address</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Email Address</label>
                       <input type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors" style={{ color: NAVY, background: CREAM }} required />
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">I am interested in</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>I am interested in</label>
                       <select value={form.interest} onChange={e => setForm({...form, interest: e.target.value})} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors appearance-none" style={{ color: NAVY, background: CREAM }}>
                         <option value="">Select one...</option>
                         <option>Support Beacon Relief (Nonprofit)</option>
@@ -339,7 +339,7 @@ function ContactSection() {
                       </select>
                     </div>
                     <div>
-                      <label className="text-gray-400 text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block">Message</label>
+                      <label className="text-[10px] uppercase tracking-[0.15em] font-semibold mb-2 block" style={{ color: NAVY, opacity: 0.55 }}>Message</label>
                       <textarea value={form.message} onChange={e => setForm({...form, message: e.target.value})} rows={5} className="w-full border border-gray-200 text-sm px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors resize-none" style={{ color: NAVY, background: CREAM }} required />
                     </div>
                     <button type="submit" className="px-8 py-3.5 text-[11px] font-bold tracking-[0.2em] uppercase text-white hover:-translate-y-0.5 hover:opacity-90 transition-all duration-300" style={{ background: NAVY }}>

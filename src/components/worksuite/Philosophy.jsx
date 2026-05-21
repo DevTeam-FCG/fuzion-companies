@@ -45,7 +45,7 @@ export default function Philosophy() {
               <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-medium mb-8 leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
                 Engineering-grade<br />software for<br />engineering work.
               </h2>
-              <p className="text-gray-600 text-base leading-relaxed font-normal">
+              <p className="text-base leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>
                 The Works Suite was born inside Fuzion Consulting Group — a firm with over 35 combined years supporting large-scale construction, utility, and enterprise programs. We built it because the tools we needed did not exist. Now they do.
               </p>
             </AnimatedElement>
@@ -58,7 +58,7 @@ export default function Philosophy() {
                     <p.icon className="w-4 h-4" style={{ color: GOLD }} />
                   </div>
                   <h3 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.title}</h3>
-                  <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{p.desc}</p>
+                  <p className="text-[14px] leading-relaxed font-normal" style={{ color: NAVY, opacity: 0.75 }}>{p.desc}</p>
                 </div>
               </AnimatedElement>
             ))}
