@@ -281,7 +281,7 @@ function ProductsSection() {
         { name: "ProjectWorks", status: "January 2027", statusColor: '#6366f1', desc: "Long-range forecasting and Stage Gate 1–5 project management with SAP / Oracle / Maximo / M365 connectivity. SaaS-ready." },
       ],
       link: "https://fuzionconsultinggroup.com/",
-      linkLabel: "FuzionConsultingGroup.com →",
+      linkLabel: "fuzionconsultinggroup.com →",
     },
     {
       eyebrow: "SB217 Platform · sb217platform.com",
@@ -557,7 +557,7 @@ function ContactSection() {
   };
 
   const contacts = [
-    { icon: Globe, label: "Fuzion Consulting Group", link: "https://fuzionconsultinggroup.com/", linkLabel: "FuzionConsultingGroup.com" },
+    { icon: Globe, label: "Fuzion Consulting Group", link: "https://fuzionconsultinggroup.com/", linkLabel: "fuzionconsultinggroup.com" },
     { icon: Building2, label: "Fuzion Chickasaw Group", link: "https://fuzionchickasawgroup.com/", linkLabel: "fuzionchickasawgroup.com" },
     { icon: Zap, label: "SB217 Platform", links: [{ href: "https://sb217platform.com/", label: "sb217platform.com" }, { href: "https://www.supportbeaconrelief.com/", label: "supportbeaconrelief.com" }] },
     { icon: Anchor, label: "Rancher Navy", links: [{ href: "https://ranchernavy.org/", label: "ranchernavy.org" }, { href: "tel:+18172646444", label: "(817) 264-6444" }] },
