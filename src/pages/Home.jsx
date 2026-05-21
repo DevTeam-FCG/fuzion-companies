@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { base44 } from "@/api/base44Client";
 import { Anchor, Globe, Building2, Zap, CheckCircle, ArrowRight } from "lucide-react";
 import BeforeTheFire from "@/components/home/BeforeTheFire";
+import HeroRotator from "@/components/home/HeroRotator";
 
 const NAVY = '#0a1628';
 const NAVY2 = '#0d1f3c';
@@ -39,6 +40,7 @@ function AnimatedElement({ children, className, delay = 0 }) {
 function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-20" style={{ background: `linear-gradient(160deg, ${NAVY} 0%, ${NAVY2} 100%)` }}>
+      <HeroRotator />
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] rounded-full blur-[140px]" style={{ background: `${GOLD}18` }} />
         <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full blur-[100px]" style={{ background: `${GOLD}0d` }} />
@@ -431,20 +433,28 @@ function RancherNavySection() {
 
           <div className="lg:col-span-6">
             <AnimatedElement delay={200}>
-              <div className="border border-gray-200 p-10 sm:p-12 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ borderLeft: '4px solid #1a8a6e', background: '#FAF8F4' }}>
-                <div className="flex items-center gap-3 mb-6">
-                  <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
-                  <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
+              <div className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden" style={{ borderLeft: '4px solid #1a8a6e', background: '#FAF8F4' }}>
+                <div
+                  className="w-full h-64 bg-cover bg-center"
+                  style={{ backgroundImage: `url(https://media.base44.com/images/public/6a02527a727fcfaa45765426/e656eed75_RancherNavy-MountedMuleSupport-Kerrville-3-Copy.jpg)` }}
+                  role="img"
+                  aria-label="Rancher Navy mounted search and recovery team in Kerrville"
+                />
+                <div className="p-10 sm:p-12">
+                  <div className="flex items-center gap-3 mb-6">
+                    <Anchor className="w-4 h-4" style={{ color: '#1a8a6e' }} />
+                    <span className="text-[11px] tracking-[0.15em] uppercase font-semibold text-gray-400">Rancher Navy · 501(c)(3)</span>
+                  </div>
+                  <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
+                    Mobilizing relief<br />when it matters most.
+                  </h3>
+                  <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
+                    A Texas-based 501(c)(3) nonprofit connecting donors, haulers, volunteers, and agricultural families in crisis — now powered by Support Beacon Relief.
+                  </p>
+                  <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#1a8a6e' }}>
+                    Visit Rancher Navy → 
+                  </a>
                 </div>
-                <h3 className="text-3xl font-medium mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>
-                  Mobilizing relief<br />when it matters most.
-                </h3>
-                <p className="text-gray-600 text-[15px] leading-relaxed mb-8 font-normal">
-                  A Texas-based 501(c)(3) nonprofit connecting donors, haulers, volunteers, and agricultural families in crisis — now powered by Support Beacon Relief.
-                </p>
-                <a href="https://ranchernavy.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.15em] uppercase hover:opacity-70 transition-opacity" style={{ color: '#1a8a6e' }}>
-                  Visit Rancher Navy → 
-                </a>
               </div>
             </AnimatedElement>
           </div>

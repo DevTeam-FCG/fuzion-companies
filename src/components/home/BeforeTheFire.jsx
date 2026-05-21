@@ -33,18 +33,21 @@ const PILLARS = [
     eyebrow: "Founded 2019",
     title: "35+ Years Combined Experience",
     body: "Program management, business process optimization, engineering, construction, document management, SaaS, and Microsoft 365 — built by practitioners who have spent decades inside large-scale capital programs.",
+    image: "https://media.base44.com/images/public/6a02527a727fcfaa45765426/6fd9ed498_LargeConstructionProjectP1.jpg",
   },
   {
     icon: Layers,
     eyebrow: "The Works Suite",
     title: "Building enterprise software, by design",
     body: "Fuzion365 Fieldworks live and in deployment. Construct Works and ProjectWorks in active development — purpose-built for EPC, utility, and regulated programs that demand audit-grade discipline.",
+    image: "https://media.base44.com/images/public/6a02527a727fcfaa45765426/cdad4eadb_SubstationPlant.jpg",
   },
   {
     icon: Flame,
     eyebrow: "February 17, 2026",
     title: "Then the Ranger Road Fire happened",
     body: "We drove into Gate, Oklahoma with a hay trailer and our own time. We met Rancher Navy. The work expanded — but the people, the values, and the engineering discipline were already in place.",
+    image: "https://media.base44.com/images/public/6a02527a727fcfaa45765426/e2fb123af_RangerRoadFire-Ashland-KS.jpg",
   },
 ];
 
@@ -72,14 +75,22 @@ export default function BeforeTheFire() {
         <div className="grid grid-cols-1 md:grid-cols-3 border border-gray-200">
           {PILLARS.map((p, i) => (
             <AnimatedElement key={i} delay={i * 120} className="h-full">
-              <div className="p-10 h-full flex flex-col border-r border-b border-gray-200 last:border-r-0 hover:shadow-sm transition-shadow duration-300" style={{ background: CREAM }}>
-                <div className="h-1 w-12 mb-6" style={{ background: GOLD }} />
-                <div className="w-10 h-10 border border-gray-200 flex items-center justify-center mb-6">
-                  <p.icon className="w-4 h-4" style={{ color: GOLD }} />
+              <div className="h-full flex flex-col border-r border-b border-gray-200 last:border-r-0 hover:shadow-sm transition-shadow duration-300 overflow-hidden" style={{ background: CREAM }}>
+                <div
+                  className="w-full h-48 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${p.image})` }}
+                  role="img"
+                  aria-label={p.title}
+                />
+                <div className="p-10 flex flex-col flex-1">
+                  <div className="h-1 w-12 mb-6" style={{ background: GOLD }} />
+                  <div className="w-10 h-10 border border-gray-200 flex items-center justify-center mb-6">
+                    <p.icon className="w-4 h-4" style={{ color: GOLD }} />
+                  </div>
+                  <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{p.eyebrow}</p>
+                  <h3 className="text-xl font-semibold mb-4 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.title}</h3>
+                  <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{p.body}</p>
                 </div>
-                <p className="text-[10px] tracking-[0.2em] uppercase font-semibold mb-3" style={{ color: GOLD }}>{p.eyebrow}</p>
-                <h3 className="text-xl font-semibold mb-4 leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif", color: NAVY }}>{p.title}</h3>
-                <p className="text-gray-600 text-[14px] leading-relaxed font-normal">{p.body}</p>
               </div>
             </AnimatedElement>
           ))}
