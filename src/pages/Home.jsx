@@ -280,7 +280,7 @@ function ProductsSection() {
         { name: "Construct Works", status: "January 2027", statusColor: GOLD, desc: "AI-powered document & construction management with custom forms, workflows, and metadata. Final development." },
         { name: "ProjectWorks", status: "January 2027", statusColor: '#6366f1', desc: "Long-range forecasting and Stage Gate 1–5 project management with SAP / Oracle / Maximo / M365 connectivity. SaaS-ready." },
       ],
-      link: "https://fcghelps.com/",
+      link: "https://fuzionconsultinggroup.com/",
       linkLabel: "FuzionConsultingGroup.com →",
     },
     {
