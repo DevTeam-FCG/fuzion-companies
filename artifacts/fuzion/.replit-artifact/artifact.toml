@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Fuzion Companies"
+version = "1.0.0"
+id = "artifacts/fuzion"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23701
+
+[services.development]
+run = "pnpm --filter @workspace/fuzion run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fuzion", "run", "build" ]
+publicDir = "artifacts/fuzion/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23701"
+BASE_PATH = "/"

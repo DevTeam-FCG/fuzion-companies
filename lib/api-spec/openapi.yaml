@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: portfolio
+    description: Portfolio company operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,21 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /portfolio-companies:
+    get:
+      operationId: listPortfolioCompanies
+      tags: [portfolio]
+      summary: List portfolio companies
+      description: Returns the portfolio companies ordered by sort order
+      responses:
+        "200":
+          description: A list of portfolio companies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PortfolioCompany"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +50,33 @@ components:
           type: string
       required:
         - status
-
+    PortfolioCompany:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        tagline:
+          type: [string, "null"]
+        category:
+          type: [string, "null"]
+        badge:
+          type: [string, "null"]
+        description:
+          type: [string, "null"]
+        features:
+          type: array
+          items:
+            type: string
+        link_url:
+          type: [string, "null"]
+        link_label:
+          type: [string, "null"]
+        status:
+          type: [string, "null"]
+        sort_order:
+          type: [integer, "null"]
+      required:
+        - id
+        - name

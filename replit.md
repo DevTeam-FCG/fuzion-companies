@@ -1,6 +1,6 @@
-# [Project name]
+# Fuzion Companies
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Marketing site for Fuzion Companies — a portfolio of technology, consulting, and mission-driven businesses. Ported from a Base44 import into the Replit pnpm-workspace stack.
 
 ## Run & Operate
 
@@ -22,7 +22,10 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- Frontend (Base44-origin JSX): `artifacts/fuzion/` — pages in `src/pages/`, theme in `src/index.css` (navy + gold, radius 0)
+- Backend: `artifacts/api-server/` — routes in `src/routes/` (`portfolio.ts`, `functions.ts`); PDF generators in `src/lib/pdf/*.ts`
+- DB schema (source of truth): `lib/db/src/schema/portfolio-companies.ts`
+- API contract (source of truth): `lib/api-spec/openapi.yaml` → codegen into `lib/api-zod/` + `lib/api-client-react/`
 
 ## Architecture decisions
 
